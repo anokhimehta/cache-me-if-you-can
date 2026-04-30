@@ -1,5 +1,5 @@
-# Cache Me If You Can
-Can we make that cache smaller and faster, without making the AI dumber?
+# Cache Me If You Can : Can we make that cache smaller and faster, without making the AI dumber?
+
 
 ## Introduction
 This project focuses on improving the inference efficiency of Qwen3-VL-4B-Instruct, a vision-language model used for multimodal question answering tasks. Vision-language models process both text and image inputs, which can create very long input sequences, especially when high-resolution images are converted into many visual tokens.
