@@ -14,7 +14,7 @@ This reduces the number of image tokens before they are passed into the model. I
 ### [DuetVLM-style token pruning](https://github.com/anokhimehta/cache-me-if-you-can/blob/main/duet-vlm/README_DUET_VLM.md)
 This performs token pruning in a more model-aware way. It combines vision-to-vision token compression with text-guided pruning, where text queries help identify the most relevant visual tokens.
 
-### Modality-Stratified KV Cache Eviction
+### [Modality-Stratified KV Cache ](https://github.com/anokhimehta/cache-me-if-you-can/blob/main/stratified-eviction/README.md)
 This improves upon uniform KV cache eviction by maintaining separate budgets for image and text tokens. The motivation is that visual tokens are often more redundant than text tokens, so treating both modalities equally may be inefficient.
 
 ### [DivPrune visual token pruning](https://github.com/anokhimehta/cache-me-if-you-can/blob/main/divprune_eval/README.md)
