@@ -341,5 +341,6 @@ For MMMU, the output also contains:
 | `avg_image_tokens_after` | Number of visual tokens retained after pruning. |
 
 
-
+## Results
+Results are present in this [link](https://docs.google.com/spreadsheets/d/12PNi3hzRkLylr0DWR3TUmmn1R_9DeLRX2lvOyDYmHUY/edit?gid=2040556413#gid=2040556413) 
 
