@@ -8,10 +8,10 @@ Can we reduce the visual token or KV cache cost to make inference faster and mor
 
 To study this, the project evaluates multiple training-free compression techniques on Qwen3-VL-4B-Instruct across visual question-answering benchmarks. The main approaches explored are:
 
-### VisionZIP-style visual token pruning
+### [VisionZIP-style visual token pruning](https://github.com/anokhimehta/cache-me-if-you-can/blob/main/vision-zip/README.md)
 This reduces the number of image tokens before they are passed into the model. Image embeddings are ranked using an importance score, such as L2 norm, and only the most important tokens are retained.
 
-### DuetVLM-style token pruning
+### [DuetVLM-style token pruning](https://github.com/anokhimehta/cache-me-if-you-can/blob/main/duet-vlm/README_DUET_VLM.md)
 This performs token pruning in a more model-aware way. It combines vision-to-vision token compression with text-guided pruning, where text queries help identify the most relevant visual tokens.
 
 ### Modality-Stratified KV Cache Eviction
