@@ -33,6 +33,6 @@ The experiments were run on an NVIDIA A100 40GB GPU.
 | KV-cache image-token pruning | Completed |
 | Unified optimization pipeline | Completed through team integration and extension of individual modules |
 
-## Links for results and running commands are present in the experiment's respective README files
+### Links for results and running commands are present in the experiment's respective README files
 
 
