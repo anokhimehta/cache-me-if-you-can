@@ -1,4 +1,4 @@
-# Cache Me If You Can : Can we make that cache smaller and faster, without making the AI dumber?
+# Cache Me If You Can 
 
 
 ## Introduction
