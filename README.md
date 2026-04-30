@@ -22,3 +22,15 @@ This approach selects a diverse subset of visual tokens using a greedy max-min d
 
 The experiments were run on an NVIDIA A100 40GB GPU.
 
+
+## Project Milestones and Completion Status
+| Area | Status |
+|---|---|
+| Baseline benchmarking | Completed |
+| KV cache compression | Completed |
+| Modality-aware eviction | Completed  |
+| Image-token masking and dropping | Completed |
+| KV-cache image-token pruning | Completed |
+| Unified optimization pipeline | Completed through team integration and extension of individual modules |
+
+
