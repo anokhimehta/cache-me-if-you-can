@@ -49,11 +49,7 @@ The main research question is:
 
 The VisionZip implementation uses the `visionzip_keep_ratio` argument to control how many visual tokens are retained.
 
-For a given image with `N` visual tokens:
 
-```text
-K = int(N * visionzip_keep_ratio)
-```
 
 The code then computes an importance score for each visual token using the L2 norm and keeps the top-`K` tokens. In `qwen_utils.py`, the pixel tensor can be masked before generation. In the modified `modeling_qwen3_vl.py`, image embeddings are also selected using top-`K` L2-norm scoring and DeepStack image features are updated consistently.
 
