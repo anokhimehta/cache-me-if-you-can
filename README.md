@@ -8,6 +8,9 @@ Can we reduce the visual token or KV cache cost to make inference faster and mor
 
 To study this, the project evaluates multiple training-free compression techniques on Qwen3-VL-4B-Instruct across visual question-answering benchmarks. The main approaches explored are:
 
+### KV Cache Compression
+This reduces the size of the KV cache during decoding. Token key-value pairs are ranked using an importance score, such as expected attention, and low-importance tokens are evicted based on a compression ratio. This helps reduce memory usage and decoding overhead while preserving the most useful context for generation.
+
 ### [VisionZIP-style visual token pruning](https://github.com/anokhimehta/cache-me-if-you-can/blob/main/vision-zip/README.md)
 This reduces the number of image tokens before they are passed into the model. Image embeddings are ranked using an importance score, such as L2 norm, and only the most important tokens are retained.
 
