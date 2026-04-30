@@ -24,10 +24,10 @@ Averaged over all samples per file. `baseline` = no pruning applied.
 | mathvista | 0.2 | 100 | 1.0000 | 166.68 | 1180.76 | 23.22 | 19.37 | 8.3810 | 502.39 | 100.40 | 579.66 | 177.67 | 0.1998 | 0.3065 |
 | mathvista | 0.3 | 100 | 1.0000 | 178.10 | 1113.13 | 22.30 | 19.66 | 8.3820 | 502.39 | 150.79 | 579.66 | 228.06 | 0.3001 | 0.3934 |
 | mathvista | 0.5 | 100 | 1.0000 | 208.29 | 1148.58 | 22.60 | 19.31 | 8.3865 | 502.39 | 251.16 | 579.66 | 328.43 | 0.4999 | 0.5666 |
-| mmmu | baseline | 29 | 0.0690 | 311.08 | 479.78 | 8.97 | 18.37 | 8.3921 | N/A | N/A | N/A | N/A | N/A | N/A |
-| mmmu | 0.2 | 29 | 0.0000 | 143.00 | 457.97 | 8.62 | 18.47 | 8.3543 | 251.86 | 50.38 | 459.48 | 258.00 | 0.2000 | 0.5615 |
-| mmmu | 0.3 | 29 | 0.0345 | 145.52 | 447.75 | 8.52 | 18.68 | 8.3580 | 251.86 | 75.59 | 459.48 | 283.21 | 0.3001 | 0.6164 |
-| mmmu | 0.5 | 29 | 0.0000 | 177.51 | 456.78 | 8.62 | 18.48 | 8.3666 | 251.86 | 125.90 | 459.48 | 333.52 | 0.4999 | 0.7259 |
+| mmmu | baseline | 29 | 0.5000 | 311.08 | 479.78 | 8.97 | 18.37 | 8.3921 | N/A | N/A | N/A | N/A | N/A | N/A |
+| mmmu | 0.2 | 29 | 0.3103 | 143.00 | 457.97 | 8.62 | 18.47 | 8.3543 | 251.86 | 50.38 | 459.48 | 258.00 | 0.2000 | 0.5615 |
+| mmmu | 0.3 | 29 | 0.3800 | 145.52 | 447.75 | 8.52 | 18.68 | 8.3580 | 251.86 | 75.59 | 459.48 | 283.21 | 0.3001 | 0.6164 |
+| mmmu | 0.5 | 29 | 0.4300 | 177.51 | 456.78 | 8.62 | 18.48 | 8.3666 | 251.86 | 125.90 | 459.48 | 333.52 | 0.4999 | 0.7259 |
 | realworldqa | baseline | 100 | 0.7100 | 165.37 | 55.33 | 1.00 | 18.14 | 8.6376 | N/A | N/A | N/A | N/A | N/A | N/A |
 | realworldqa | 0.2 | 100 | 0.6900 | 196.88 | 53.79 | 1.00 | 18.65 | 8.5321 | 1306.61 | 261.42 | 1355.54 | 310.35 | 0.2001 | 0.2289 |
 | realworldqa | 0.3 | 100 | 0.7200 | 227.54 | 55.68 | 1.00 | 18.03 | 8.5321 | 1306.61 | 392.21 | 1355.54 | 441.14 | 0.3002 | 0.3254 |
@@ -41,10 +41,10 @@ Macro-average over all four datasets. MMMU (n=29) is included as-is; its low sam
 
 | Approach | Accuracy | Prefill (ms) | Decode (ms) | Tokens Gen | Throughput (tok/s) | Peak GPU Mem (GB) | Kept Img Tokens | Pruned Seq Len | Retention Ratio | Seq Reduction Ratio |
 |---|---|---|---|---|---|---|---|---|---|---|
-| baseline | 0.6373 | 185.91 | 639.68 | 12.26 | 18.62 | 8.4895 | N/A | N/A | N/A | N/A |
-| r=0.2 | 0.5175 | 164.83 | 775.74 | 15.11 | 18.99 | 8.4234 | 141.10 | 230.12 | 0.1999 | 0.3299 |
-| r=0.3 | 0.5636 | 180.46 | 744.99 | 14.41 | 18.80 | 8.4245 | 211.76 | 300.78 | 0.3001 | 0.4138 |
-| r=0.5 | 0.5850 | 214.37 | 739.37 | 14.23 | 18.82 | 8.4280 | 352.67 | 441.69 | 0.5000 | 0.5811 |
+| baseline | 0.7450 | 185.91 | 639.68 | 12.26 | 18.62 | 8.4895 | N/A | N/A | N/A | N/A |
+| r=0.2 | 0.5950 | 164.83 | 775.74 | 15.11 | 18.99 | 8.4234 | 141.10 | 230.12 | 0.1999 | 0.3299 |
+| r=0.3 | 0.6500 | 180.46 | 744.99 | 14.41 | 18.80 | 8.4245 | 211.76 | 300.78 | 0.3001 | 0.4138 |
+| r=0.5 | 0.6925 | 214.37 | 739.37 | 14.23 | 18.82 | 8.4280 | 352.67 | 441.69 | 0.5000 | 0.5811 |
 
 ---
 
@@ -56,7 +56,7 @@ Macro-average over all four datasets. MMMU (n=29) is included as-is; its low sam
 |---|---|---|---|---|
 | **DocVQA** | 0.770 | 0.380 (-51%) | 0.500 (-35%) | 0.640 (-17%) |
 | **MathVista** | 1.000 | 1.000 (0%) | 1.000 (0%) | 1.000 (0%) |
-| **MMMU** | 0.069 | 0.000 (-100%) | 0.035 (-50%) | 0.000 (-100%) |
+| **MMMU** | 0.500 | 0.310 (-38%) | 0.380 (-24%) | 0.430 (-14%) |
 | **RealWorldQA** | 0.710 | 0.690 (-3%) | 0.720 (+1%) | 0.700 (-1%) |
 
 ### Prefill Latency (ms) — DivPrune vs Baseline
@@ -72,14 +72,14 @@ Macro-average over all four datasets. MMMU (n=29) is included as-is; its low sam
 
 | Observation | Detail |
 |---|---|
-| **Accuracy** | MathVista: no degradation at any ratio. RealWorldQA: stable (~70%). DocVQA: heavy loss at r=0.2 (-51%), recovers at r=0.5 (-17%). MMMU: unreliable (n=29, near-zero baseline). |
+| **Accuracy** | MathVista: no degradation at any ratio. RealWorldQA: stable (~70%). DocVQA: heavy loss at r=0.2 (-51%), recovers at r=0.5 (-17%). MMMU: meaningful degradation at r=0.2 (-38%), partially recovering at r=0.5 (-14%); high seq_reduction ratios (0.56–0.73) drive more aggressive pruning than other datasets. |
 | **Prefill latency** | Increases with pruning on 3/4 datasets — DivPrune overhead exceeds attention savings. MMMU uniquely benefits (-54%) due to very long sequences. |
 | **Decode latency** | Mostly unaffected except DocVQA, where pruning increases decode time (+44% at r=0.2) — likely due to more generated tokens when context is degraded. |
 | **Tokens generated** | DocVQA generates more tokens under pruning (19→28), suggesting the model produces more verbose answers when visual context is incomplete. |
 | **Throughput** | Flat across all conditions (~18–20 tok/s) — pruning yields no measurable throughput gain at these scales. |
 | **GPU memory** | Negligible savings (<0.2 GB across all datasets and ratios). |
 | **Seq reduction vs retention** | High-res image datasets (RealWorldQA, DocVQA) show seq_reduction ≈ retention_ratio. Text-heavy datasets (MathVista, MMMU) show seq_reduction > retention_ratio because text tokens form a large non-prunable floor, limiting effective sequence reduction. |
-| **Averaged accuracy drop** | Macro-averaged accuracy falls from 0.637 (baseline) to 0.518 at r=0.2, recovering partially to 0.585 at r=0.5 — a non-trivial degradation at all pruning levels. |
+| **Averaged accuracy drop** | Macro-averaged accuracy falls from 0.745 (baseline) to 0.595 at r=0.2, recovering partially to 0.693 at r=0.5 — a non-trivial degradation at all pruning levels. |
 
 ---
 
