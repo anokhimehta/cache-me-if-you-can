@@ -1,0 +1,3330 @@
+{
+  "config": {
+    "benchmark": "MathVista",
+    "split": "testmini",
+    "limit": 100,
+    "visionzip_keep_ratio": 0.75,
+    "t2v": true,
+    "max_new_tokens": 4
+  },
+  "summary": {
+    "correct": 26,
+    "total": 87,
+    "accuracy": 0.2988505747126437,
+    "avg_latency_sec": 0.2761390647668948,
+    "avg_prefill_sec": 0.09240144696728937,
+    "avg_decode_sec": 0.2761390647668948,
+    "avg_peak_memory_gb": 8.401542016829568,
+    "avg_throughput_tok_per_sec": 10.33924051576633,
+    "avg_image_tokens_before": 703.6781609195402,
+    "avg_image_tokens_after": 527.7586206896551
+  },
+  "results": [
+    {
+      "index": 2,
+      "question": "△ABC的两内角平分线OB、OC相交于点O，若∠A＝110°，则∠BOC＝（）",
+      "prediction_raw": "125°",
+      "prediction_final": "125°",
+      "gold": "145°",
+      "correct": false,
+      "latency_sec": 0.9067356586456299,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296441555023193,
+      "throughput_tok_per_sec": 4.411429022185702,
+      "prefill_sec": 0.08972477912902832,
+      "decode_sec": 0.9067356586456299,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          147
+        ],
+        "attention_mask": [
+          1,
+          147
+        ],
+        "mm_token_type_ids": [
+          1,
+          147
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 3,
+      "question": "Subtract all large rubber spheres. Subtract all big shiny cylinders. How many objects are left?",
+      "prediction_raw": "5",
+      "prediction_final": "5",
+      "gold": "4",
+      "correct": false,
+      "latency_sec": 0.18793153762817383,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.300557613372803,
+      "throughput_tok_per_sec": 10.642173342704398,
+      "prefill_sec": 0.08807992935180664,
+      "decode_sec": 0.18793153762817383,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          138
+        ],
+        "attention_mask": [
+          1,
+          138
+        ],
+        "mm_token_type_ids": [
+          1,
+          138
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 4,
+      "question": "Find $m\\angle H$",
+      "prediction_raw": "105",
+      "prediction_final": "105",
+      "gold": "97",
+      "correct": false,
+      "latency_sec": 0.3728759288787842,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.300512790679932,
+      "throughput_tok_per_sec": 10.727428858247201,
+      "prefill_sec": 0.09050273895263672,
+      "decode_sec": 0.3728759288787842,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          127
+        ],
+        "attention_mask": [
+          1,
+          127
+        ],
+        "mm_token_type_ids": [
+          1,
+          127
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 5,
+      "question": "As shown in the figure, if CB = 4.0, DB = 7.0, and D is the midpoint of AC, then the length of AC is ()",
+      "prediction_raw": "6.0",
+      "prediction_final": "6.0",
+      "gold": "6cm",
+      "correct": true,
+      "latency_sec": 0.3704047203063965,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.302323341369629,
+      "throughput_tok_per_sec": 10.798998448754176,
+      "prefill_sec": 0.08964323997497559,
+      "decode_sec": 0.3704047203063965,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          160
+        ],
+        "attention_mask": [
+          1,
+          160
+        ],
+        "mm_token_type_ids": [
+          1,
+          160
+        ],
+        "pixel_values": [
+          336,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 336,
+      "image_tokens_after": 252
+    },
+    {
+      "index": 6,
+      "question": "What time is shown? Answer by typing a time word, not a number. It is (_) after eight.",
+      "prediction_raw": "quarter",
+      "prediction_final": "quarter",
+      "gold": "quarter",
+      "correct": true,
+      "latency_sec": 0.18665409088134766,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.296369075775146,
+      "throughput_tok_per_sec": 10.715007587330945,
+      "prefill_sec": 0.08843421936035156,
+      "decode_sec": 0.18665409088134766,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          134
+        ],
+        "attention_mask": [
+          1,
+          134
+        ],
+        "mm_token_type_ids": [
+          1,
+          134
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 7,
+      "question": "Is the number of tiny gray bicycles that are on the left side of the brown metal sedan greater than the number of things that are to the left of the tiny green bicycle?",
+      "prediction_raw": "False",
+      "prediction_final": "False",
+      "gold": "Yes",
+      "correct": false,
+      "latency_sec": 0.21257424354553223,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.526803970336914,
+      "throughput_tok_per_sec": 9.408477558908077,
+      "prefill_sec": 0.09616994857788086,
+      "decode_sec": 0.21257424354553223,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          375
+        ],
+        "attention_mask": [
+          1,
+          375
+        ],
+        "mm_token_type_ids": [
+          1,
+          375
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 8,
+      "question": "如图是一株美丽的勾股树，其中所有四边形都是正方形，所有的三角形都是直角三角形，若正方形A、B的面积分别为5、3，则最大正方形C的面积是（）",
+      "prediction_raw": "8",
+      "prediction_final": "8",
+      "gold": "8",
+      "correct": true,
+      "latency_sec": 0.18743586540222168,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.296499729156494,
+      "throughput_tok_per_sec": 10.67031646109013,
+      "prefill_sec": 0.08875560760498047,
+      "decode_sec": 0.18743586540222168,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          161
+        ],
+        "attention_mask": [
+          1,
+          161
+        ],
+        "mm_token_type_ids": [
+          1,
+          161
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 9,
+      "question": "Which object comes next?",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "E",
+      "correct": false,
+      "latency_sec": 0.1911909580230713,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.352170944213867,
+      "throughput_tok_per_sec": 10.460745741745052,
+      "prefill_sec": 0.0885922908782959,
+      "decode_sec": 0.1911909580230713,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          201
+        ],
+        "attention_mask": [
+          1,
+          201
+        ],
+        "mm_token_type_ids": [
+          1,
+          201
+        ],
+        "pixel_values": [
+          624,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 624,
+      "image_tokens_after": 468
+    },
+    {
+      "index": 10,
+      "question": "Subtract all red things. Subtract all tiny matte balls. How many objects are left?",
+      "prediction_raw": "5",
+      "prediction_final": "5",
+      "gold": "5",
+      "correct": true,
+      "latency_sec": 0.18594622611999512,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.30055284500122,
+      "throughput_tok_per_sec": 10.7557977471904,
+      "prefill_sec": 0.08932232856750488,
+      "decode_sec": 0.18594622611999512,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          137
+        ],
+        "attention_mask": [
+          1,
+          137
+        ],
+        "mm_token_type_ids": [
+          1,
+          137
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 11,
+      "question": "Are there fewer metallic fighters than rubber objects?",
+      "prediction_raw": "True",
+      "prediction_final": "True",
+      "gold": "Yes",
+      "correct": false,
+      "latency_sec": 0.20276737213134766,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.526802062988281,
+      "throughput_tok_per_sec": 9.863519850247158,
+      "prefill_sec": 0.09686970710754395,
+      "decode_sec": 0.20276737213134766,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          349
+        ],
+        "attention_mask": [
+          1,
+          349
+        ],
+        "mm_token_type_ids": [
+          1,
+          349
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 12,
+      "question": "How many objects are preferred by more than 90 percent of people in at least one category?",
+      "prediction_raw": "zero",
+      "prediction_final": "zero",
+      "gold": "0",
+      "correct": false,
+      "latency_sec": 0.19142913818359375,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.39142370223999,
+      "throughput_tok_per_sec": 10.447730261846877,
+      "prefill_sec": 0.08972835540771484,
+      "decode_sec": 0.19142913818359375,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          256
+        ],
+        "attention_mask": [
+          1,
+          256
+        ],
+        "mm_token_type_ids": [
+          1,
+          256
+        ],
+        "pixel_values": [
+          784,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 784,
+      "image_tokens_after": 588
+    },
+    {
+      "index": 13,
+      "question": "Is the number of tiny objects that are behind the small metal jet less than the number of tiny things left of the tiny sedan?",
+      "prediction_raw": "True",
+      "prediction_final": "True",
+      "gold": "Yes",
+      "correct": false,
+      "latency_sec": 0.2029130458831787,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.526803016662598,
+      "throughput_tok_per_sec": 9.856438708980013,
+      "prefill_sec": 0.09675407409667969,
+      "decode_sec": 0.2029130458831787,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          366
+        ],
+        "attention_mask": [
+          1,
+          366
+        ],
+        "mm_token_type_ids": [
+          1,
+          366
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 14,
+      "question": "Which organism with be most affected if algae was eliminated?",
+      "prediction_raw": "Water snail",
+      "prediction_final": "Water snail",
+      "gold": "Common water flea",
+      "correct": false,
+      "latency_sec": 0.3666062355041504,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.302202701568604,
+      "throughput_tok_per_sec": 10.910889157406913,
+      "prefill_sec": 0.08872628211975098,
+      "decode_sec": 0.3666062355041504,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          135
+        ],
+        "attention_mask": [
+          1,
+          135
+        ],
+        "mm_token_type_ids": [
+          1,
+          135
+        ],
+        "pixel_values": [
+          336,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 336,
+      "image_tokens_after": 252
+    },
+    {
+      "index": 15,
+      "question": "How many items sold less than 5 units in at least one store?",
+      "prediction_raw": "three",
+      "prediction_final": "three",
+      "gold": "2",
+      "correct": false,
+      "latency_sec": 0.18935346603393555,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.3914213180542,
+      "throughput_tok_per_sec": 10.562257147389971,
+      "prefill_sec": 0.09031081199645996,
+      "decode_sec": 0.18935346603393555,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          251
+        ],
+        "attention_mask": [
+          1,
+          251
+        ],
+        "mm_token_type_ids": [
+          1,
+          251
+        ],
+        "pixel_values": [
+          784,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 784,
+      "image_tokens_after": 588
+    },
+    {
+      "index": 16,
+      "question": "如图，在Rt△ABC中，∠ACB＝90°，D是AB的中点，AB＝10，则CD的长为（）",
+      "prediction_raw": "5",
+      "prediction_final": "5",
+      "gold": "5",
+      "correct": true,
+      "latency_sec": 0.18893074989318848,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.295610904693604,
+      "throughput_tok_per_sec": 10.58588928022937,
+      "prefill_sec": 0.08863139152526855,
+      "decode_sec": 0.18893074989318848,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          145
+        ],
+        "attention_mask": [
+          1,
+          145
+        ],
+        "mm_token_type_ids": [
+          1,
+          145
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": 210
+    },
+    {
+      "index": 17,
+      "question": "The passage below describes an experiment. Read the passage and then follow the instructions below.\n\nLinda applied a thin layer of wax to the underside of her snowboard and rode the board straight down a hill. Then, she removed the wax and rode the snowboard straight down the hill again. She repeated the rides four more times, alternating whether she rode with a thin layer of wax on the board or not. Her friend Bob timed each ride. Linda and Bob calculated the average time it took to slide straight down the hill on the snowboard with wax compared to the average time on the snowboard without wax.\nFigure: snowboarding down a hill. Identify the question that Linda and Bob's experiment can best answer.",
+      "prediction_raw": "Does wax affect the",
+      "prediction_final": "Does wax affect the",
+      "gold": "Does Linda's snowboard slide down a hill in less time when it has a layer of wax or when it does not have a layer of wax?",
+      "correct": false,
+      "latency_sec": 0.3642568588256836,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.314206600189209,
+      "throughput_tok_per_sec": 10.981261994339588,
+      "prefill_sec": 0.08799171447753906,
+      "decode_sec": 0.3642568588256836,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          263
+        ],
+        "attention_mask": [
+          1,
+          263
+        ],
+        "mm_token_type_ids": [
+          1,
+          263
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 20,
+      "question": "Fill in the blank to describe the model. The model has 4 dots divided into 2 equal groups. There are (_) dots in each group.",
+      "prediction_raw": "2",
+      "prediction_final": "2",
+      "gold": "2",
+      "correct": true,
+      "latency_sec": 0.18796110153198242,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.299973964691162,
+      "throughput_tok_per_sec": 10.640499463447181,
+      "prefill_sec": 0.08872079849243164,
+      "decode_sec": 0.18796110153198242,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          148
+        ],
+        "attention_mask": [
+          1,
+          148
+        ],
+        "mm_token_type_ids": [
+          1,
+          148
+        ],
+        "pixel_values": [
+          312,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 312,
+      "image_tokens_after": 234
+    },
+    {
+      "index": 21,
+      "question": "How many people in the image were born after the end of World War II?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold": "0",
+      "correct": true,
+      "latency_sec": 0.24935531616210938,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.756314277648926,
+      "throughput_tok_per_sec": 8.020683219361452,
+      "prefill_sec": 0.11854362487792969,
+      "decode_sec": 0.24935531616210938,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          481
+        ],
+        "attention_mask": [
+          1,
+          481
+        ],
+        "mm_token_type_ids": [
+          1,
+          481
+        ],
+        "pixel_values": [
+          1700,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1700,
+      "image_tokens_after": 1275
+    },
+    {
+      "index": 22,
+      "question": "The derivative of f(x) at x=2 is ____ that at x=5",
+      "prediction_raw": "less than",
+      "prediction_final": "less than",
+      "gold": "equal to",
+      "correct": false,
+      "latency_sec": 0.2798476219177246,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.399257183074951,
+      "throughput_tok_per_sec": 10.72011968313957,
+      "prefill_sec": 0.08869004249572754,
+      "decode_sec": 0.2798476219177246,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          262
+        ],
+        "attention_mask": [
+          1,
+          262
+        ],
+        "mm_token_type_ids": [
+          1,
+          262
+        ],
+        "pixel_values": [
+          816,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 816,
+      "image_tokens_after": 612
+    },
+    {
+      "index": 23,
+      "question": "Is Periwinkle the maximum?",
+      "prediction_raw": "No",
+      "prediction_final": "No",
+      "gold": "no",
+      "correct": true,
+      "latency_sec": 0.19156122207641602,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.476047992706299,
+      "throughput_tok_per_sec": 10.440526419288434,
+      "prefill_sec": 0.0908670425415039,
+      "decode_sec": 0.19156122207641602,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          311
+        ],
+        "attention_mask": [
+          1,
+          311
+        ],
+        "mm_token_type_ids": [
+          1,
+          311
+        ],
+        "pixel_values": [
+          1056,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1056,
+      "image_tokens_after": 792
+    },
+    {
+      "index": 24,
+      "question": "Is Medium Periwinkle the smoothest?",
+      "prediction_raw": "No",
+      "prediction_final": "No",
+      "gold": "no",
+      "correct": true,
+      "latency_sec": 0.20111489295959473,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.509733200073242,
+      "throughput_tok_per_sec": 9.944564375955055,
+      "prefill_sec": 0.09395813941955566,
+      "decode_sec": 0.20111489295959473,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          337
+        ],
+        "attention_mask": [
+          1,
+          337
+        ],
+        "mm_token_type_ids": [
+          1,
+          337
+        ],
+        "pixel_values": [
+          1152,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1152,
+      "image_tokens_after": 864
+    },
+    {
+      "index": 25,
+      "question": "Is Black greater than Deep Sky Blue?",
+      "prediction_raw": "No",
+      "prediction_final": "No",
+      "gold": "no",
+      "correct": true,
+      "latency_sec": 0.19706487655639648,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.509732723236084,
+      "throughput_tok_per_sec": 10.148941987780534,
+      "prefill_sec": 0.09391522407531738,
+      "decode_sec": 0.19706487655639648,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          336
+        ],
+        "attention_mask": [
+          1,
+          336
+        ],
+        "mm_token_type_ids": [
+          1,
+          336
+        ],
+        "pixel_values": [
+          1152,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1152,
+      "image_tokens_after": 864
+    },
+    {
+      "index": 27,
+      "question": "$\\overline{AB}$ is a diameter, $AC=8$ inches, and $BC=15$ inches. Find the radius of the circle.",
+      "prediction_raw": "6.5",
+      "prediction_final": "6.5",
+      "gold": "8.5",
+      "correct": false,
+      "latency_sec": 0.370220422744751,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.405455112457275,
+      "throughput_tok_per_sec": 10.8043742437132,
+      "prefill_sec": 0.08932042121887207,
+      "decode_sec": 0.370220422744751,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          281
+        ],
+        "attention_mask": [
+          1,
+          281
+        ],
+        "mm_token_type_ids": [
+          1,
+          281
+        ],
+        "pixel_values": [
+          832,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 832,
+      "image_tokens_after": 624
+    },
+    {
+      "index": 28,
+      "question": "What is the age gap between these two people in image?",
+      "prediction_raw": "0 years",
+      "prediction_final": "0 years",
+      "gold": "4",
+      "correct": false,
+      "latency_sec": 0.2981417179107666,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.517926216125488,
+      "throughput_tok_per_sec": 10.062328818061939,
+      "prefill_sec": 0.0958092212677002,
+      "decode_sec": 0.2981417179107666,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          346
+        ],
+        "attention_mask": [
+          1,
+          346
+        ],
+        "mm_token_type_ids": [
+          1,
+          346
+        ],
+        "pixel_values": [
+          1176,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1176,
+      "image_tokens_after": 882
+    },
+    {
+      "index": 29,
+      "question": "As shown in the figure, the two chords AB and CD in the circle intersect at E, ∠D = 35.0, ∠AEC = 105.0, then ∠C = ()",
+      "prediction_raw": "35.0",
+      "prediction_final": "35.0",
+      "gold": "70°",
+      "correct": false,
+      "latency_sec": 0.3688647747039795,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296499252319336,
+      "throughput_tok_per_sec": 10.844082369236995,
+      "prefill_sec": 0.08980321884155273,
+      "decode_sec": 0.3688647747039795,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          159
+        ],
+        "attention_mask": [
+          1,
+          159
+        ],
+        "mm_token_type_ids": [
+          1,
+          159
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 30,
+      "question": "Are there more big red rubber double buss in front of the large red double bus than big green things?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold": "No",
+      "correct": false,
+      "latency_sec": 0.2039041519165039,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.526803016662598,
+      "throughput_tok_per_sec": 9.808530043169371,
+      "prefill_sec": 0.09753537178039551,
+      "decode_sec": 0.2039041519165039,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          362
+        ],
+        "attention_mask": [
+          1,
+          362
+        ],
+        "mm_token_type_ids": [
+          1,
+          362
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 31,
+      "question": "如图，在ABCD中，AB＝AC，∠CAB＝40°，则∠D的度数是（）",
+      "prediction_raw": "40°",
+      "prediction_final": "40°",
+      "gold": "70°",
+      "correct": false,
+      "latency_sec": 0.37223196029663086,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.299657344818115,
+      "throughput_tok_per_sec": 10.745987520288178,
+      "prefill_sec": 0.09096384048461914,
+      "decode_sec": 0.37223196029663086,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          145
+        ],
+        "attention_mask": [
+          1,
+          145
+        ],
+        "mm_token_type_ids": [
+          1,
+          145
+        ],
+        "pixel_values": [
+          308,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 308,
+      "image_tokens_after": 231
+    },
+    {
+      "index": 32,
+      "question": "Use a sector paper sheet with a central angle of 120.0 and a radius of 6.0 to roll into a conical bottomless paper cap (as shown in the picture), then the bottom perimeter of the paper cap is ()",
+      "prediction_raw": "4π",
+      "prediction_final": "4π",
+      "gold": "4πcm",
+      "correct": true,
+      "latency_sec": 0.2830021381378174,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.297918796539307,
+      "throughput_tok_per_sec": 10.600626623319183,
+      "prefill_sec": 0.088470458984375,
+      "decode_sec": 0.2830021381378174,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          166
+        ],
+        "attention_mask": [
+          1,
+          166
+        ],
+        "mm_token_type_ids": [
+          1,
+          166
+        ],
+        "pixel_values": [
+          300,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 300,
+      "image_tokens_after": 225
+    },
+    {
+      "index": 33,
+      "question": "Is this function continuous at each point?",
+      "prediction_raw": "No",
+      "prediction_final": "No",
+      "gold": "No",
+      "correct": true,
+      "latency_sec": 0.18866443634033203,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.426105976104736,
+      "throughput_tok_per_sec": 10.60083203170415,
+      "prefill_sec": 0.08822059631347656,
+      "decode_sec": 0.18866443634033203,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          273
+        ],
+        "attention_mask": [
+          1,
+          273
+        ],
+        "mm_token_type_ids": [
+          1,
+          273
+        ],
+        "pixel_values": [
+          900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 900,
+      "image_tokens_after": 675
+    },
+    {
+      "index": 34,
+      "question": "如图，AB是⊙O的直径，EF，EB是⊙O的弦，点E是FEB的中点，EF与AB交于点C，连接OF，若∠AOF＝40°，则∠F的度数是（）",
+      "prediction_raw": "30°",
+      "prediction_final": "30°",
+      "gold": "35°",
+      "correct": false,
+      "latency_sec": 0.3683481216430664,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296547412872314,
+      "throughput_tok_per_sec": 10.859292514259232,
+      "prefill_sec": 0.08889579772949219,
+      "decode_sec": 0.3683481216430664,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          169
+        ],
+        "attention_mask": [
+          1,
+          169
+        ],
+        "mm_token_type_ids": [
+          1,
+          169
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 35,
+      "question": "What is the age gap between these two people in image?",
+      "prediction_raw": "10",
+      "prediction_final": "10",
+      "gold": "9",
+      "correct": false,
+      "latency_sec": 0.33684849739074707,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.65496015548706,
+      "throughput_tok_per_sec": 8.906080992607116,
+      "prefill_sec": 0.10845398902893066,
+      "decode_sec": 0.33684849739074707,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          427
+        ],
+        "attention_mask": [
+          1,
+          427
+        ],
+        "mm_token_type_ids": [
+          1,
+          427
+        ],
+        "pixel_values": [
+          1500,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1500,
+      "image_tokens_after": 1125
+    },
+    {
+      "index": 36,
+      "question": "What is the limit as x approaches -1?",
+      "prediction_raw": "2",
+      "prediction_final": "2",
+      "gold": "3",
+      "correct": false,
+      "latency_sec": 0.19088172912597656,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.364547729492188,
+      "throughput_tok_per_sec": 10.477692177023691,
+      "prefill_sec": 0.08979082107543945,
+      "decode_sec": 0.19088172912597656,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          219
+        ],
+        "attention_mask": [
+          1,
+          219
+        ],
+        "mm_token_type_ids": [
+          1,
+          219
+        ],
+        "pixel_values": [
+          676,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 676,
+      "image_tokens_after": 507
+    },
+    {
+      "index": 37,
+      "question": "How many bars have values smaller than 6?",
+      "prediction_raw": "zero",
+      "prediction_final": "zero",
+      "gold": "0",
+      "correct": false,
+      "latency_sec": 0.1903979778289795,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.3914213180542,
+      "throughput_tok_per_sec": 10.50431324326592,
+      "prefill_sec": 0.08986544609069824,
+      "decode_sec": 0.1903979778289795,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          246
+        ],
+        "attention_mask": [
+          1,
+          246
+        ],
+        "mm_token_type_ids": [
+          1,
+          246
+        ],
+        "pixel_values": [
+          784,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 784,
+      "image_tokens_after": 588
+    },
+    {
+      "index": 38,
+      "question": "Is this function odd or even?",
+      "prediction_raw": "neither",
+      "prediction_final": "neither",
+      "gold": "odd",
+      "correct": false,
+      "latency_sec": 0.280163049697876,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.33906602859497,
+      "throughput_tok_per_sec": 10.708050198750904,
+      "prefill_sec": 0.0891733169555664,
+      "decode_sec": 0.280163049697876,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          187
+        ],
+        "attention_mask": [
+          1,
+          187
+        ],
+        "mm_token_type_ids": [
+          1,
+          187
+        ],
+        "pixel_values": [
+          560,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 560,
+      "image_tokens_after": 420
+    },
+    {
+      "index": 39,
+      "question": "Subtract all brown blocks. Subtract all large blue rubber things. How many objects are left?",
+      "prediction_raw": "8",
+      "prediction_final": "8",
+      "gold": "7",
+      "correct": false,
+      "latency_sec": 0.18728971481323242,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.300557613372803,
+      "throughput_tok_per_sec": 10.678642988988607,
+      "prefill_sec": 0.089752197265625,
+      "decode_sec": 0.18728971481323242,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          138
+        ],
+        "attention_mask": [
+          1,
+          138
+        ],
+        "mm_token_type_ids": [
+          1,
+          138
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 41,
+      "question": "What is the age gap between these two people in image?",
+      "prediction_raw": "0 years",
+      "prediction_final": "0 years",
+      "gold": "8",
+      "correct": false,
+      "latency_sec": 0.2820169925689697,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.420885562896729,
+      "throughput_tok_per_sec": 10.637656875467615,
+      "prefill_sec": 0.09201574325561523,
+      "decode_sec": 0.2820169925689697,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          273
+        ],
+        "attention_mask": [
+          1,
+          273
+        ],
+        "mm_token_type_ids": [
+          1,
+          273
+        ],
+        "pixel_values": [
+          884,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 884,
+      "image_tokens_after": 663
+    },
+    {
+      "index": 42,
+      "question": "Use the graph to answer the question below. Which month is the wettest on average in Christchurch?",
+      "prediction_raw": "Mar",
+      "prediction_final": "Mar",
+      "gold": "May",
+      "correct": false,
+      "latency_sec": 0.18972539901733398,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.339132308959961,
+      "throughput_tok_per_sec": 10.541551159511716,
+      "prefill_sec": 0.08883213996887207,
+      "decode_sec": 0.18972539901733398,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          201
+        ],
+        "attention_mask": [
+          1,
+          201
+        ],
+        "mm_token_type_ids": [
+          1,
+          201
+        ],
+        "pixel_values": [
+          560,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 560,
+      "image_tokens_after": 420
+    },
+    {
+      "index": 43,
+      "question": "Chase wants to buy 4 kilograms of oval beads and 5 kilograms of star-shaped beads. How much will he spend? (Unit: $)",
+      "prediction_raw": "22",
+      "prediction_final": "22",
+      "gold": "18",
+      "correct": false,
+      "latency_sec": 0.27223753929138184,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.295590877532959,
+      "throughput_tok_per_sec": 11.01978811522034,
+      "prefill_sec": 0.08697795867919922,
+      "decode_sec": 0.27223753929138184,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          140
+        ],
+        "attention_mask": [
+          1,
+          140
+        ],
+        "mm_token_type_ids": [
+          1,
+          140
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": 210
+    },
+    {
+      "index": 44,
+      "question": "An administrator at the Department of Motor Vehicles (DMV) tracked the average wait time from month to month. According to the table, what was the rate of change between August and September? (Unit: minutes per month)",
+      "prediction_raw": "-3",
+      "prediction_final": "-3",
+      "gold": "-3",
+      "correct": true,
+      "latency_sec": 0.2699086666107178,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.296484470367432,
+      "throughput_tok_per_sec": 11.11487095865218,
+      "prefill_sec": 0.08761453628540039,
+      "decode_sec": 0.2699086666107178,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          157
+        ],
+        "attention_mask": [
+          1,
+          157
+        ],
+        "mm_token_type_ids": [
+          1,
+          157
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 46,
+      "question": "Subtract all rubber balls. Subtract all yellow shiny things. How many objects are left?",
+      "prediction_raw": "7",
+      "prediction_final": "7",
+      "gold": "6",
+      "correct": false,
+      "latency_sec": 0.18647003173828125,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.30055284500122,
+      "throughput_tok_per_sec": 10.72558405957203,
+      "prefill_sec": 0.08802962303161621,
+      "decode_sec": 0.18647003173828125,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          137
+        ],
+        "attention_mask": [
+          1,
+          137
+        ],
+        "mm_token_type_ids": [
+          1,
+          137
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 47,
+      "question": "Find $m \\angle 3$.",
+      "prediction_raw": "52",
+      "prediction_final": "52",
+      "gold": "38",
+      "correct": false,
+      "latency_sec": 0.2774038314819336,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.452654361724854,
+      "throughput_tok_per_sec": 10.814558630908385,
+      "prefill_sec": 0.08852529525756836,
+      "decode_sec": 0.2774038314819336,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          296
+        ],
+        "attention_mask": [
+          1,
+          296
+        ],
+        "mm_token_type_ids": [
+          1,
+          296
+        ],
+        "pixel_values": [
+          988,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 988,
+      "image_tokens_after": 741
+    },
+    {
+      "index": 48,
+      "question": "What is the sum of the digits on either end of the sign in the corner?",
+      "prediction_raw": "1",
+      "prediction_final": "1",
+      "gold": "0",
+      "correct": false,
+      "latency_sec": 0.20046138763427734,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.526803016662598,
+      "throughput_tok_per_sec": 9.976983715431567,
+      "prefill_sec": 0.09571385383605957,
+      "decode_sec": 0.20046138763427734,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          357
+        ],
+        "attention_mask": [
+          1,
+          357
+        ],
+        "mm_token_type_ids": [
+          1,
+          357
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 49,
+      "question": "Based on the food web, what would likely happen if the number of large roach would decrease?",
+      "prediction_raw": "Steelhead population would",
+      "prediction_final": "Steelhead population would",
+      "gold": "The population of predatory insects would decrease.",
+      "correct": false,
+      "latency_sec": 0.4304196834564209,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.665100574493408,
+      "throughput_tok_per_sec": 9.293255289531832,
+      "prefill_sec": 0.10478067398071289,
+      "decode_sec": 0.4304196834564209,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          440
+        ],
+        "attention_mask": [
+          1,
+          440
+        ],
+        "mm_token_type_ids": [
+          1,
+          440
+        ],
+        "pixel_values": [
+          1520,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1520,
+      "image_tokens_after": 1140
+    },
+    {
+      "index": 50,
+      "question": "Is the number of gray rubber objects in front of the small yellow aeroplane greater than the number of big cyan matte fighters?",
+      "prediction_raw": "True",
+      "prediction_final": "True",
+      "gold": "Yes",
+      "correct": false,
+      "latency_sec": 0.2000412940979004,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.526803016662598,
+      "throughput_tok_per_sec": 9.99793572131761,
+      "prefill_sec": 0.0956411361694336,
+      "decode_sec": 0.2000412940979004,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          366
+        ],
+        "attention_mask": [
+          1,
+          366
+        ],
+        "mm_token_type_ids": [
+          1,
+          366
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 51,
+      "question": "Subtract all big red metallic spheres. Subtract all big brown matte things. How many objects are left?",
+      "prediction_raw": "7",
+      "prediction_final": "7",
+      "gold": "6",
+      "correct": false,
+      "latency_sec": 0.18863916397094727,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.300567150115967,
+      "throughput_tok_per_sec": 10.602252246559068,
+      "prefill_sec": 0.0890188217163086,
+      "decode_sec": 0.18863916397094727,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          140
+        ],
+        "attention_mask": [
+          1,
+          140
+        ],
+        "mm_token_type_ids": [
+          1,
+          140
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 52,
+      "question": "What is the age gap between these two people in image?",
+      "prediction_raw": "0 years",
+      "prediction_final": "0 years",
+      "gold": "1",
+      "correct": false,
+      "latency_sec": 0.394054651260376,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.87215518951416,
+      "throughput_tok_per_sec": 7.6131571862038925,
+      "prefill_sec": 0.12800121307373047,
+      "decode_sec": 0.394054651260376,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          527
+        ],
+        "attention_mask": [
+          1,
+          527
+        ],
+        "mm_token_type_ids": [
+          1,
+          527
+        ],
+        "pixel_values": [
+          1900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1900,
+      "image_tokens_after": 1425
+    },
+    {
+      "index": 53,
+      "question": "In the figure above, the ratio of the length of line AB to the length of line AC is 2 : 5. If AC = 25, what is the length of line AB?",
+      "prediction_raw": "10",
+      "prediction_final": "10",
+      "gold": "10",
+      "correct": true,
+      "latency_sec": 0.2800567150115967,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.339238166809082,
+      "throughput_tok_per_sec": 10.712115936501558,
+      "prefill_sec": 0.09016776084899902,
+      "decode_sec": 0.2800567150115967,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          221
+        ],
+        "attention_mask": [
+          1,
+          221
+        ],
+        "mm_token_type_ids": [
+          1,
+          221
+        ],
+        "pixel_values": [
+          560,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 560,
+      "image_tokens_after": 420
+    },
+    {
+      "index": 54,
+      "question": "如图，一块直角三角板60°的角的顶点A与直角顶点C分别在两平行线FG，DE上，斜边AB平分∠CAG，交直线DE于点H，则∠BCH的大小为（）",
+      "prediction_raw": "30°",
+      "prediction_final": "30°",
+      "gold": "30°",
+      "correct": true,
+      "latency_sec": 0.36546969413757324,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296011447906494,
+      "throughput_tok_per_sec": 10.94481995132074,
+      "prefill_sec": 0.08853840827941895,
+      "decode_sec": 0.36546969413757324,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          167
+        ],
+        "attention_mask": [
+          1,
+          167
+        ],
+        "mm_token_type_ids": [
+          1,
+          167
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": 210
+    },
+    {
+      "index": 55,
+      "question": "What is the perimeter of the rectangle?",
+      "prediction_raw": "10 yd",
+      "prediction_final": "10 yd",
+      "gold": "6",
+      "correct": false,
+      "latency_sec": 0.36396169662475586,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.295486450195312,
+      "throughput_tok_per_sec": 10.990167473925137,
+      "prefill_sec": 0.08777642250061035,
+      "decode_sec": 0.36396169662475586,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          118
+        ],
+        "attention_mask": [
+          1,
+          118
+        ],
+        "mm_token_type_ids": [
+          1,
+          118
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": 210
+    },
+    {
+      "index": 56,
+      "question": "Subtract all small balls. Subtract all blue rubber things. How many objects are left?",
+      "prediction_raw": "3",
+      "prediction_final": "3",
+      "gold": "2",
+      "correct": false,
+      "latency_sec": 0.1859602928161621,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.30055284500122,
+      "throughput_tok_per_sec": 10.75498414049699,
+      "prefill_sec": 0.08797550201416016,
+      "decode_sec": 0.1859602928161621,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          137
+        ],
+        "attention_mask": [
+          1,
+          137
+        ],
+        "mm_token_type_ids": [
+          1,
+          137
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 57,
+      "question": "Does Firebrick have the maximum area under the curve?",
+      "prediction_raw": "Yes",
+      "prediction_final": "Yes",
+      "gold": "yes",
+      "correct": true,
+      "latency_sec": 0.19702625274658203,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.509733200073242,
+      "throughput_tok_per_sec": 10.150931523691051,
+      "prefill_sec": 0.09377837181091309,
+      "decode_sec": 0.19702625274658203,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          339
+        ],
+        "attention_mask": [
+          1,
+          339
+        ],
+        "mm_token_type_ids": [
+          1,
+          339
+        ],
+        "pixel_values": [
+          1152,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1152,
+      "image_tokens_after": 864
+    },
+    {
+      "index": 58,
+      "question": "As shown in the figure, AB is the diameter of ⊙O, CD is the chord of ⊙O, ∠ADC = 26.0, then the degree of ∠CAB is ()",
+      "prediction_raw": "26.0",
+      "prediction_final": "26.0",
+      "gold": "64°",
+      "correct": false,
+      "latency_sec": 0.36330699920654297,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296484470367432,
+      "throughput_tok_per_sec": 11.009972306440392,
+      "prefill_sec": 0.08789634704589844,
+      "decode_sec": 0.36330699920654297,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          156
+        ],
+        "attention_mask": [
+          1,
+          156
+        ],
+        "mm_token_type_ids": [
+          1,
+          156
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 59,
+      "question": "What is the age gap between these two people in image?",
+      "prediction_raw": "0 years",
+      "prediction_final": "0 years",
+      "gold": "22",
+      "correct": false,
+      "latency_sec": 0.276491641998291,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.374429702758789,
+      "throughput_tok_per_sec": 10.850237563486793,
+      "prefill_sec": 0.08829498291015625,
+      "decode_sec": 0.276491641998291,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          232
+        ],
+        "attention_mask": [
+          1,
+          232
+        ],
+        "mm_token_type_ids": [
+          1,
+          232
+        ],
+        "pixel_values": [
+          720,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 720,
+      "image_tokens_after": 540
+    },
+    {
+      "index": 60,
+      "question": "Is Coral the roughest?",
+      "prediction_raw": "No",
+      "prediction_final": "No",
+      "gold": "no",
+      "correct": true,
+      "latency_sec": 0.18744516372680664,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.35217571258545,
+      "throughput_tok_per_sec": 10.669787153937538,
+      "prefill_sec": 0.08864903450012207,
+      "decode_sec": 0.18744516372680664,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          202
+        ],
+        "attention_mask": [
+          1,
+          202
+        ],
+        "mm_token_type_ids": [
+          1,
+          202
+        ],
+        "pixel_values": [
+          624,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 624,
+      "image_tokens_after": 468
+    },
+    {
+      "index": 61,
+      "question": "如图，E，F分别是菱形ABCD的边AB，AD的中点，且AB＝5，AC＝6．则EF的长为（）",
+      "prediction_raw": "2.5",
+      "prediction_final": "2.5",
+      "gold": "4",
+      "correct": false,
+      "latency_sec": 0.3607199192047119,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296446323394775,
+      "throughput_tok_per_sec": 11.088935728359273,
+      "prefill_sec": 0.08755064010620117,
+      "decode_sec": 0.3607199192047119,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          148
+        ],
+        "attention_mask": [
+          1,
+          148
+        ],
+        "mm_token_type_ids": [
+          1,
+          148
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 62,
+      "question": "Subtract all red matte cubes. Subtract all small green metal objects. How many objects are left?",
+      "prediction_raw": "7",
+      "prediction_final": "7",
+      "gold": "7",
+      "correct": true,
+      "latency_sec": 0.18603205680847168,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.300562381744385,
+      "throughput_tok_per_sec": 10.750835282432476,
+      "prefill_sec": 0.08837532997131348,
+      "decode_sec": 0.18603205680847168,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          139
+        ],
+        "attention_mask": [
+          1,
+          139
+        ],
+        "mm_token_type_ids": [
+          1,
+          139
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 63,
+      "question": "The diagrams below show two pure samples of gas in identical closed, rigid containers. Each colored ball represents one gas particle. Both samples have the same number of particles. Compare the average kinetic energies of the particles in each sample. Which sample has the higher temperature?",
+      "prediction_raw": "Sample A has the",
+      "prediction_final": "Sample A has the",
+      "gold": "sample A",
+      "correct": false,
+      "latency_sec": 0.3714418411254883,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.420887470245361,
+      "throughput_tok_per_sec": 10.768846040283965,
+      "prefill_sec": 0.09073710441589355,
+      "decode_sec": 0.3714418411254883,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          313
+        ],
+        "attention_mask": [
+          1,
+          313
+        ],
+        "mm_token_type_ids": [
+          1,
+          313
+        ],
+        "pixel_values": [
+          884,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 884,
+      "image_tokens_after": 663
+    },
+    {
+      "index": 64,
+      "question": "is f(3) > 0?",
+      "prediction_raw": "Yes",
+      "prediction_final": "Yes",
+      "gold": "Yes",
+      "correct": true,
+      "latency_sec": 0.18965578079223633,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.31108808517456,
+      "throughput_tok_per_sec": 10.545420717710448,
+      "prefill_sec": 0.08768987655639648,
+      "decode_sec": 0.18965578079223633,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          149
+        ],
+        "attention_mask": [
+          1,
+          149
+        ],
+        "mm_token_type_ids": [
+          1,
+          149
+        ],
+        "pixel_values": [
+          400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 400,
+      "image_tokens_after": 300
+    },
+    {
+      "index": 65,
+      "question": "Choose the answer for the missing picture.",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "A",
+      "correct": false,
+      "latency_sec": 0.18578433990478516,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.374429702758789,
+      "throughput_tok_per_sec": 10.76516998701292,
+      "prefill_sec": 0.08803296089172363,
+      "decode_sec": 0.18578433990478516,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          228
+        ],
+        "attention_mask": [
+          1,
+          228
+        ],
+        "mm_token_type_ids": [
+          1,
+          228
+        ],
+        "pixel_values": [
+          720,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 720,
+      "image_tokens_after": 540
+    },
+    {
+      "index": 66,
+      "question": "What is the perimeter of the square?",
+      "prediction_raw": "16 m",
+      "prediction_final": "16 m",
+      "gold": "16",
+      "correct": true,
+      "latency_sec": 0.3628861904144287,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.305809497833252,
+      "throughput_tok_per_sec": 11.02273965132666,
+      "prefill_sec": 0.08787250518798828,
+      "decode_sec": 0.3628861904144287,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          138
+        ],
+        "attention_mask": [
+          1,
+          138
+        ],
+        "mm_token_type_ids": [
+          1,
+          138
+        ],
+        "pixel_values": [
+          360,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 360,
+      "image_tokens_after": 270
+    },
+    {
+      "index": 67,
+      "question": "将一根长度为16cm自然伸直的弹性皮筋AB两端固定在水平的桌面上，然后把中点C竖直向上拉升6cm至D点（如图），则该弹性皮筋被拉长了（）",
+      "prediction_raw": "12cm",
+      "prediction_final": "12cm",
+      "gold": "4cm",
+      "correct": false,
+      "latency_sec": 0.36185216903686523,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.29570722579956,
+      "throughput_tok_per_sec": 11.054238007324154,
+      "prefill_sec": 0.08786606788635254,
+      "decode_sec": 0.36185216903686523,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          163
+        ],
+        "attention_mask": [
+          1,
+          163
+        ],
+        "mm_token_type_ids": [
+          1,
+          163
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": 210
+    },
+    {
+      "index": 68,
+      "question": "Subtract all big matte balls. Subtract all green rubber objects. How many objects are left?",
+      "prediction_raw": "8",
+      "prediction_final": "8",
+      "gold": "7",
+      "correct": false,
+      "latency_sec": 0.1852872371673584,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.300557613372803,
+      "throughput_tok_per_sec": 10.794051606444565,
+      "prefill_sec": 0.08818364143371582,
+      "decode_sec": 0.1852872371673584,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          138
+        ],
+        "attention_mask": [
+          1,
+          138
+        ],
+        "mm_token_type_ids": [
+          1,
+          138
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 70,
+      "question": "What is the perimeter of the rectangle?",
+      "prediction_raw": "18 ft",
+      "prediction_final": "18 ft",
+      "gold": "18",
+      "correct": true,
+      "latency_sec": 0.3683583736419678,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.295486450195312,
+      "throughput_tok_per_sec": 10.858990282891922,
+      "prefill_sec": 0.08862829208374023,
+      "decode_sec": 0.3683583736419678,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          118
+        ],
+        "attention_mask": [
+          1,
+          118
+        ],
+        "mm_token_type_ids": [
+          1,
+          118
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": 210
+    },
+    {
+      "index": 71,
+      "question": "A real estate agent drove around the neighborhood and counted the number of houses on each block. How many blocks have exactly 36 houses? (Unit: blocks)",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold": "1",
+      "correct": false,
+      "latency_sec": 0.18702387809753418,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.295600414276123,
+      "throughput_tok_per_sec": 10.693821667824613,
+      "prefill_sec": 0.08878207206726074,
+      "decode_sec": 0.18702387809753418,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          143
+        ],
+        "attention_mask": [
+          1,
+          143
+        ],
+        "mm_token_type_ids": [
+          1,
+          143
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": 210
+    },
+    {
+      "index": 72,
+      "question": "Complete the matrix.",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "D",
+      "correct": false,
+      "latency_sec": 0.19061565399169922,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.443281650543213,
+      "throughput_tok_per_sec": 10.492317698561601,
+      "prefill_sec": 0.08957624435424805,
+      "decode_sec": 0.19061565399169922,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ],
+        "mm_token_type_ids": [
+          1,
+          284
+        ],
+        "pixel_values": [
+          960,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 960,
+      "image_tokens_after": 720
+    },
+    {
+      "index": 74,
+      "question": "Is Sky Blue less than Web Maroon?",
+      "prediction_raw": "No",
+      "prediction_final": "No",
+      "gold": "no",
+      "correct": true,
+      "latency_sec": 0.18872714042663574,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.399252891540527,
+      "throughput_tok_per_sec": 10.597309933689498,
+      "prefill_sec": 0.08909964561462402,
+      "decode_sec": 0.18872714042663574,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          253
+        ],
+        "attention_mask": [
+          1,
+          253
+        ],
+        "mm_token_type_ids": [
+          1,
+          253
+        ],
+        "pixel_values": [
+          816,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 816,
+      "image_tokens_after": 612
+    },
+    {
+      "index": 76,
+      "question": "Which year showed the largest difference in the data points between the two lines",
+      "prediction_raw": "2009",
+      "prediction_final": "2009",
+      "gold": "2019",
+      "correct": false,
+      "latency_sec": 0.48265910148620605,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.75631856918335,
+      "throughput_tok_per_sec": 8.287422712393036,
+      "prefill_sec": 0.11808967590332031,
+      "decode_sec": 0.48265910148620605,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          480
+        ],
+        "attention_mask": [
+          1,
+          480
+        ],
+        "mm_token_type_ids": [
+          1,
+          480
+        ],
+        "pixel_values": [
+          1700,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1700,
+      "image_tokens_after": 1275
+    },
+    {
+      "index": 77,
+      "question": "Find the missing value.",
+      "prediction_raw": "10",
+      "prediction_final": "10",
+      "gold": "8",
+      "correct": false,
+      "latency_sec": 0.33426880836486816,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.697399616241455,
+      "throughput_tok_per_sec": 8.9748128599704,
+      "prefill_sec": 0.1080014705657959,
+      "decode_sec": 0.33426880836486816,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          441
+        ],
+        "attention_mask": [
+          1,
+          441
+        ],
+        "mm_token_type_ids": [
+          1,
+          441
+        ],
+        "pixel_values": [
+          1584,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1584,
+      "image_tokens_after": 1188
+    },
+    {
+      "index": 78,
+      "question": "As shown in the figure, points A, B, C, and D are on circle O, and point E is on the extended line of AD. If ∠ABC = 60.0, then the degree of ∠CDE is ()",
+      "prediction_raw": "60.0",
+      "prediction_final": "60.0",
+      "gold": "60°",
+      "correct": true,
+      "latency_sec": 0.36630702018737793,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296523571014404,
+      "throughput_tok_per_sec": 10.919801640585185,
+      "prefill_sec": 0.08946490287780762,
+      "decode_sec": 0.36630702018737793,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          164
+        ],
+        "attention_mask": [
+          1,
+          164
+        ],
+        "mm_token_type_ids": [
+          1,
+          164
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 79,
+      "question": "According to the food web, what will happen if all the algae died due to pesticides?",
+      "prediction_raw": "plankton will",
+      "prediction_final": "plankton will",
+      "gold": "Crabs and limpets will decrease",
+      "correct": false,
+      "latency_sec": 0.36419200897216797,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296359539031982,
+      "throughput_tok_per_sec": 10.983217372860274,
+      "prefill_sec": 0.08825302124023438,
+      "decode_sec": 0.36419200897216797,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          130
+        ],
+        "attention_mask": [
+          1,
+          130
+        ],
+        "mm_token_type_ids": [
+          1,
+          130
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 80,
+      "question": "What is the value of r at theta=3*pi/2?",
+      "prediction_raw": "0.8",
+      "prediction_final": "0.8",
+      "gold": "-1",
+      "correct": false,
+      "latency_sec": 0.3773031234741211,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.478752136230469,
+      "throughput_tok_per_sec": 10.601555489837752,
+      "prefill_sec": 0.09102058410644531,
+      "decode_sec": 0.3773031234741211,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          320
+        ],
+        "attention_mask": [
+          1,
+          320
+        ],
+        "mm_token_type_ids": [
+          1,
+          320
+        ],
+        "pixel_values": [
+          1064,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1064,
+      "image_tokens_after": 798
+    },
+    {
+      "index": 81,
+      "question": "A square is inscribed in a circle of area 18$\\pi$ square units. Find the length of a side of the square.",
+      "prediction_raw": "6",
+      "prediction_final": "6",
+      "gold": "6",
+      "correct": true,
+      "latency_sec": 0.18726587295532227,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.29640245437622,
+      "throughput_tok_per_sec": 10.680002546311032,
+      "prefill_sec": 0.08877801895141602,
+      "decode_sec": 0.18726587295532227,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          141
+        ],
+        "attention_mask": [
+          1,
+          141
+        ],
+        "mm_token_type_ids": [
+          1,
+          141
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 82,
+      "question": "Is the number of shiny buss less than the number of matte things?",
+      "prediction_raw": "True",
+      "prediction_final": "True",
+      "gold": "Yes",
+      "correct": false,
+      "latency_sec": 0.20172834396362305,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.526803016662598,
+      "throughput_tok_per_sec": 9.914323196747468,
+      "prefill_sec": 0.09571504592895508,
+      "decode_sec": 0.20172834396362305,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          355
+        ],
+        "attention_mask": [
+          1,
+          355
+        ],
+        "mm_token_type_ids": [
+          1,
+          355
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 86,
+      "question": "Look at the table. Then answer the question. At a price of $790, is there a shortage or a surplus?'",
+      "prediction_raw": "shortage",
+      "prediction_final": "shortage",
+      "gold": "surplus",
+      "correct": false,
+      "latency_sec": 0.27921485900878906,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.293996334075928,
+      "throughput_tok_per_sec": 10.744413856232367,
+      "prefill_sec": 0.08871126174926758,
+      "decode_sec": 0.27921485900878906,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          134
+        ],
+        "attention_mask": [
+          1,
+          134
+        ],
+        "mm_token_type_ids": [
+          1,
+          134
+        ],
+        "pixel_values": [
+          264,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 264,
+      "image_tokens_after": 198
+    },
+    {
+      "index": 87,
+      "question": "A square is tangent to a line at point P in the figure above. What is the value of x?",
+      "prediction_raw": "45",
+      "prediction_final": "45",
+      "gold": "30",
+      "correct": false,
+      "latency_sec": 0.28044652938842773,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.328640460968018,
+      "throughput_tok_per_sec": 10.697226335951195,
+      "prefill_sec": 0.09048914909362793,
+      "decode_sec": 0.28044652938842773,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          188
+        ],
+        "attention_mask": [
+          1,
+          188
+        ],
+        "mm_token_type_ids": [
+          1,
+          188
+        ],
+        "pixel_values": [
+          504,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 504,
+      "image_tokens_after": 378
+    },
+    {
+      "index": 88,
+      "question": "How many miles per gallon do an average city bus get?",
+      "prediction_raw": "10",
+      "prediction_final": "10",
+      "gold": "25",
+      "correct": false,
+      "latency_sec": 0.281111478805542,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.44328260421753,
+      "throughput_tok_per_sec": 10.671922799976592,
+      "prefill_sec": 0.0895686149597168,
+      "decode_sec": 0.281111478805542,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          292
+        ],
+        "attention_mask": [
+          1,
+          292
+        ],
+        "mm_token_type_ids": [
+          1,
+          292
+        ],
+        "pixel_values": [
+          960,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 960,
+      "image_tokens_after": 720
+    },
+    {
+      "index": 89,
+      "question": "Subtract all yellow matte blocks. Subtract all tiny brown cylinders. How many objects are left?",
+      "prediction_raw": "6",
+      "prediction_final": "6",
+      "gold": "5",
+      "correct": false,
+      "latency_sec": 0.18775272369384766,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.300557613372803,
+      "throughput_tok_per_sec": 10.652308848851797,
+      "prefill_sec": 0.08889222145080566,
+      "decode_sec": 0.18775272369384766,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          138
+        ],
+        "attention_mask": [
+          1,
+          138
+        ],
+        "mm_token_type_ids": [
+          1,
+          138
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 90,
+      "question": "Is the number of brown suvs less than the number of brown rubber school buss?",
+      "prediction_raw": "False",
+      "prediction_final": "False",
+      "gold": "No",
+      "correct": false,
+      "latency_sec": 0.20274066925048828,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.526803016662598,
+      "throughput_tok_per_sec": 9.864818969937296,
+      "prefill_sec": 0.09647226333618164,
+      "decode_sec": 0.20274066925048828,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          358
+        ],
+        "attention_mask": [
+          1,
+          358
+        ],
+        "mm_token_type_ids": [
+          1,
+          358
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 91,
+      "question": "Do the windows have a geometric shape that most houses have?",
+      "prediction_raw": "no",
+      "prediction_final": "no",
+      "gold": "No",
+      "correct": true,
+      "latency_sec": 0.190565824508667,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.387391090393066,
+      "throughput_tok_per_sec": 10.495061248031067,
+      "prefill_sec": 0.09018492698669434,
+      "decode_sec": 0.190565824508667,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          244
+        ],
+        "attention_mask": [
+          1,
+          244
+        ],
+        "mm_token_type_ids": [
+          1,
+          244
+        ],
+        "pixel_values": [
+          768,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 768,
+      "image_tokens_after": 576
+    },
+    {
+      "index": 92,
+      "question": "What's the computing and wirless total for semiconductor demand in 2014?",
+      "prediction_raw": "117.",
+      "prediction_final": "117.",
+      "gold": "197.3",
+      "correct": false,
+      "latency_sec": 0.48540687561035156,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.756333351135254,
+      "throughput_tok_per_sec": 8.240509562149057,
+      "prefill_sec": 0.1188349723815918,
+      "decode_sec": 0.48540687561035156,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          483
+        ],
+        "attention_mask": [
+          1,
+          483
+        ],
+        "mm_token_type_ids": [
+          1,
+          483
+        ],
+        "pixel_values": [
+          1700,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1700,
+      "image_tokens_after": 1275
+    },
+    {
+      "index": 93,
+      "question": "如图，D为△ABC内一点，CD平分∠ACB，BD⊥CD，∠A＝∠ABD，若∠DBC＝54°，则∠A的度数为（）",
+      "prediction_raw": "36°",
+      "prediction_final": "36°",
+      "gold": "27°",
+      "correct": false,
+      "latency_sec": 0.35738348960876465,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.296489238739014,
+      "throughput_tok_per_sec": 11.1924588468787,
+      "prefill_sec": 0.08883023262023926,
+      "decode_sec": 0.35738348960876465,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          157
+        ],
+        "attention_mask": [
+          1,
+          157
+        ],
+        "mm_token_type_ids": [
+          1,
+          157
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 94,
+      "question": "As shown in the figure, the straight lines AB and CD intersect at point O, OD bisects ∠AOE, ∠BOC = 50.0, then ∠EOB = ()",
+      "prediction_raw": "100.",
+      "prediction_final": "100.",
+      "gold": "80°",
+      "correct": false,
+      "latency_sec": 0.3653891086578369,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.295663356781006,
+      "throughput_tok_per_sec": 10.94723379876585,
+      "prefill_sec": 0.08865880966186523,
+      "decode_sec": 0.3653891086578369,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          154
+        ],
+        "attention_mask": [
+          1,
+          154
+        ],
+        "mm_token_type_ids": [
+          1,
+          154
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": 210
+    },
+    {
+      "index": 95,
+      "question": "How many times Dissatisfied more than satisfied?",
+      "prediction_raw": "3.9",
+      "prediction_final": "3.9",
+      "gold": "3.9",
+      "correct": true,
+      "latency_sec": 0.3683762550354004,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.299563884735107,
+      "throughput_tok_per_sec": 10.858463175417228,
+      "prefill_sec": 0.08889555931091309,
+      "decode_sec": 0.3683762550354004,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          126
+        ],
+        "attention_mask": [
+          1,
+          126
+        ],
+        "mm_token_type_ids": [
+          1,
+          126
+        ],
+        "pixel_values": [
+          308,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 308,
+      "image_tokens_after": 231
+    },
+    {
+      "index": 96,
+      "question": "How many algorithms have accuracies higher than 9?",
+      "prediction_raw": "zero",
+      "prediction_final": "zero",
+      "gold": "0",
+      "correct": false,
+      "latency_sec": 0.1914842128753662,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.3914213180542,
+      "throughput_tok_per_sec": 10.444725285534457,
+      "prefill_sec": 0.09020328521728516,
+      "decode_sec": 0.1914842128753662,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          247
+        ],
+        "attention_mask": [
+          1,
+          247
+        ],
+        "mm_token_type_ids": [
+          1,
+          247
+        ],
+        "pixel_values": [
+          784,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 784,
+      "image_tokens_after": 588
+    },
+    {
+      "index": 97,
+      "question": "Find the value of the square in the figure.",
+      "prediction_raw": "3",
+      "prediction_final": "3",
+      "gold": "2",
+      "correct": false,
+      "latency_sec": 0.2528834342956543,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.808806419372559,
+      "throughput_tok_per_sec": 7.908782184845428,
+      "prefill_sec": 0.11940193176269531,
+      "decode_sec": 0.2528834342956543,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          498
+        ],
+        "attention_mask": [
+          1,
+          498
+        ],
+        "mm_token_type_ids": [
+          1,
+          498
+        ],
+        "pixel_values": [
+          1792,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1792,
+      "image_tokens_after": 1344
+    },
+    {
+      "index": 98,
+      "question": "Which cat is larger?",
+      "prediction_raw": "white cat",
+      "prediction_final": "white cat",
+      "gold": "white one",
+      "correct": false,
+      "latency_sec": 0.28354787826538086,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.476047992706299,
+      "throughput_tok_per_sec": 10.580223764510807,
+      "prefill_sec": 0.09189486503601074,
+      "decode_sec": 0.28354787826538086,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          309
+        ],
+        "attention_mask": [
+          1,
+          309
+        ],
+        "mm_token_type_ids": [
+          1,
+          309
+        ],
+        "pixel_values": [
+          1056,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1056,
+      "image_tokens_after": 792
+    },
+    {
+      "index": 99,
+      "question": "What is the sum of all the values in the ruling group?",
+      "prediction_raw": "16",
+      "prediction_final": "16",
+      "gold": "12",
+      "correct": false,
+      "latency_sec": 0.280719518661499,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.3914213180542,
+      "throughput_tok_per_sec": 10.686823681888328,
+      "prefill_sec": 0.08895587921142578,
+      "decode_sec": 0.280719518661499,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          249
+        ],
+        "attention_mask": [
+          1,
+          249
+        ],
+        "mm_token_type_ids": [
+          1,
+          249
+        ],
+        "pixel_values": [
+          784,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 784,
+      "image_tokens_after": 588
+    }
+  ]
+}

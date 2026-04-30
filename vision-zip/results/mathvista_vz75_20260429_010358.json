@@ -1,0 +1,327 @@
+{
+  "config": {
+    "benchmark": "MathVista",
+    "split": "testmini",
+    "limit": 10,
+    "visionzip_keep_ratio": 0.75,
+    "max_new_tokens": 4
+  },
+  "summary": {
+    "correct": 3,
+    "total": 8,
+    "accuracy": 0.375,
+    "avg_latency_sec": 0.22961682081222534,
+    "avg_prefill_sec": 0.08342736959457397,
+    "avg_decode_sec": 0.17487934231758118,
+    "avg_peak_memory_gb": 8.322226464748383,
+    "avg_throughput_tok_per_sec": 13.371657945101052,
+    "avg_image_tokens_before": 458.0,
+    "avg_image_tokens_after": 343.5
+  },
+  "results": [
+    {
+      "index": 2,
+      "question": "△ABC的两内角平分线OB、OC相交于点O，若∠A＝110°，则∠BOC＝（）",
+      "prediction_raw": "125°",
+      "prediction_final": "125°",
+      "gold": "145°",
+      "correct": false,
+      "latency_sec": 0.6760671138763428,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.311272144317627,
+      "throughput_tok_per_sec": 5.916572360790244,
+      "prefill_sec": 0.08402800559997559,
+      "decode_sec": 0.24706554412841797,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          147
+        ],
+        "attention_mask": [
+          1,
+          147
+        ],
+        "mm_token_type_ids": [
+          1,
+          147
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 3,
+      "question": "Subtract all large rubber spheres. Subtract all big shiny cylinders. How many objects are left?",
+      "prediction_raw": "4",
+      "prediction_final": "4",
+      "gold": "4",
+      "correct": true,
+      "latency_sec": 0.14600300788879395,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.309988021850586,
+      "throughput_tok_per_sec": 13.698347923923178,
+      "prefill_sec": 0.08544182777404785,
+      "decode_sec": 0.14290285110473633,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          138
+        ],
+        "attention_mask": [
+          1,
+          138
+        ],
+        "mm_token_type_ids": [
+          1,
+          138
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 4,
+      "question": "Find $m\\angle H$",
+      "prediction_raw": "60",
+      "prediction_final": "60",
+      "gold": "97",
+      "correct": false,
+      "latency_sec": 0.19165492057800293,
+      "generated_tokens": 3,
+      "peak_memory_gb": 8.30766248703003,
+      "throughput_tok_per_sec": 15.653133198732613,
+      "prefill_sec": 0.08092498779296875,
+      "decode_sec": 0.19273853302001953,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          127
+        ],
+        "attention_mask": [
+          1,
+          127
+        ],
+        "mm_token_type_ids": [
+          1,
+          127
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 240
+    },
+    {
+      "index": 5,
+      "question": "As shown in the figure, if CB = 4.0, DB = 7.0, and D is the midpoint of AC, then the length of AC is ()",
+      "prediction_raw": "14.0",
+      "prediction_final": "14.0",
+      "gold": "6cm",
+      "correct": false,
+      "latency_sec": 0.24480700492858887,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.315799236297607,
+      "throughput_tok_per_sec": 16.339401730627827,
+      "prefill_sec": 0.08318519592285156,
+      "decode_sec": 0.24380254745483398,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          160
+        ],
+        "attention_mask": [
+          1,
+          160
+        ],
+        "mm_token_type_ids": [
+          1,
+          160
+        ],
+        "pixel_values": [
+          336,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 336,
+      "image_tokens_after": 252
+    },
+    {
+      "index": 6,
+      "question": "What time is shown? Answer by typing a time word, not a number. It is (_) after eight.",
+      "prediction_raw": "quarter",
+      "prediction_final": "quarter",
+      "gold": "quarter",
+      "correct": true,
+      "latency_sec": 0.14172601699829102,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.308525085449219,
+      "throughput_tok_per_sec": 14.11173503891044,
+      "prefill_sec": 0.08336663246154785,
+      "decode_sec": 0.14078330993652344,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          134
+        ],
+        "attention_mask": [
+          1,
+          134
+        ],
+        "mm_token_type_ids": [
+          1,
+          134
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 7,
+      "question": "Is the number of tiny gray bicycles that are on the left side of the brown metal sedan greater than the number of things that are to the left of the tiny green bicycle?",
+      "prediction_raw": "True",
+      "prediction_final": "True",
+      "gold": "Yes",
+      "correct": false,
+      "latency_sec": 0.15128540992736816,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.3801589012146,
+      "throughput_tok_per_sec": 13.22004548198135,
+      "prefill_sec": 0.08519268035888672,
+      "decode_sec": 0.15172243118286133,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          375
+        ],
+        "attention_mask": [
+          1,
+          375
+        ],
+        "mm_token_type_ids": [
+          1,
+          375
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": 900
+    },
+    {
+      "index": 8,
+      "question": "如图是一株美丽的勾股树，其中所有四边形都是正方形，所有的三角形都是直角三角形，若正方形A、B的面积分别为5、3，则最大正方形C的面积是（）",
+      "prediction_raw": "8",
+      "prediction_final": "8",
+      "gold": "8",
+      "correct": true,
+      "latency_sec": 0.14139771461486816,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.315048217773438,
+      "throughput_tok_per_sec": 14.144500181261751,
+      "prefill_sec": 0.08178186416625977,
+      "decode_sec": 0.1396496295928955,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          161
+        ],
+        "attention_mask": [
+          1,
+          161
+        ],
+        "mm_token_type_ids": [
+          1,
+          161
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 216
+    },
+    {
+      "index": 9,
+      "question": "Which object comes next?",
+      "prediction_raw": "8",
+      "prediction_final": "8",
+      "gold": "E",
+      "correct": false,
+      "latency_sec": 0.14399337768554688,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.329357624053955,
+      "throughput_tok_per_sec": 13.889527644581026,
+      "prefill_sec": 0.08349776268005371,
+      "decode_sec": 0.14036989212036133,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          201
+        ],
+        "attention_mask": [
+          1,
+          201
+        ],
+        "mm_token_type_ids": [
+          1,
+          201
+        ],
+        "pixel_values": [
+          624,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 624,
+      "image_tokens_after": 468
+    }
+  ]
+}

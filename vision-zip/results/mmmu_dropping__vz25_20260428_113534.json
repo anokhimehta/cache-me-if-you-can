@@ -1,0 +1,426 @@
+{
+  "config": {
+    "visionzip_keep_ratio": 0.25,
+    "max_new_tokens": 16,
+    "split": "validation",
+    "limit": 10
+  },
+  "summary": {
+    "correct": 1,
+    "total": 10,
+    "accuracy": 0.1,
+    "avg_prefill_sec": 0.08737661838531494,
+    "avg_decode_sec": 0.22288055419921876,
+    "avg_peak_memory_gb": 8.380387783050537,
+    "avg_throughput_tok_per_sec": 12.75024474342703,
+    "avg_image_tokens_before": 679.6,
+    "avg_image_tokens_after": 169.9,
+    "avg_latency_sec": 0.2743200778961182
+  },
+  "per_subject_summary": {
+    "Accounting": {
+      "correct": 1,
+      "total": 10,
+      "accuracy": 0.1,
+      "avg_latency_sec": 0.2743200778961182,
+      "avg_prefill_sec": 0.08737661838531494,
+      "avg_decode_sec": 0.22288055419921876,
+      "avg_peak_memory_gb": 8.380387783050537,
+      "avg_throughput_tok_per_sec": 12.75024474342703,
+      "avg_image_tokens_before": 679.6,
+      "avg_image_tokens_after": 169.9
+    }
+  },
+  "results": [
+    {
+      "subject": "Accounting",
+      "index": 0,
+      "question": "<image 1> Baxter Company has a relevant range of production between 15,000 and 30,000 units. The following cost data represents average variable costs per unit for 25,000 units of production. If 30,000 units are produced, what are the per unit manufacturing overhead costs incurred?",
+      "prediction_raw": "D",
+      "prediction_final": "D",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.6462759971618652,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.360023498535156,
+      "throughput_tok_per_sec": 3.0946530720358525,
+      "prefill_sec": 0.08819746971130371,
+      "decode_sec": 0.1531822681427002,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          340
+        ],
+        "attention_mask": [
+          1,
+          340
+        ],
+        "mm_token_type_ids": [
+          1,
+          340
+        ],
+        "pixel_values": [
+          644,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 644,
+      "image_tokens_after": 161
+    },
+    {
+      "subject": "Accounting",
+      "index": 1,
+      "question": "Assume accounts have normal balances, solve for the one missing account balance: Dividends. Equipment was recently purchased, so there is neither depreciation expense nor accumulated depreciation. <image 1>",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "C",
+      "correct": false,
+      "latency_sec": 0.1503453254699707,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.356534004211426,
+      "throughput_tok_per_sec": 13.302708240167208,
+      "prefill_sec": 0.08760881423950195,
+      "decode_sec": 0.15164589881896973,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          344
+        ],
+        "attention_mask": [
+          1,
+          344
+        ],
+        "mm_token_type_ids": [
+          1,
+          344
+        ],
+        "pixel_values": [
+          440,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 440,
+      "image_tokens_after": 110
+    },
+    {
+      "subject": "Accounting",
+      "index": 2,
+      "question": "Maxwell Software, Inc., has the following mutually exclusive projects.Suppose the company uses the NPV rule to rank these two projects.<image 1> Which project should be chosen if the appropriate discount rate is 15 percent?",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.1548175811767578,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.330265998840332,
+      "throughput_tok_per_sec": 12.918429449666744,
+      "prefill_sec": 0.08631730079650879,
+      "decode_sec": 0.14806103706359863,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          236
+        ],
+        "attention_mask": [
+          1,
+          236
+        ],
+        "mm_token_type_ids": [
+          1,
+          236
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": 72
+    },
+    {
+      "subject": "Accounting",
+      "index": 3,
+      "question": "Each situation below relates to an independent company's Owners' Equity. <image 1> Calculate the missing values of company 2.",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "D",
+      "correct": false,
+      "latency_sec": 0.15164470672607422,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.394717693328857,
+      "throughput_tok_per_sec": 13.188722792762764,
+      "prefill_sec": 0.08868670463562012,
+      "decode_sec": 0.14842581748962402,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          456
+        ],
+        "attention_mask": [
+          1,
+          456
+        ],
+        "mm_token_type_ids": [
+          1,
+          456
+        ],
+        "pixel_values": [
+          1064,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1064,
+      "image_tokens_after": 266
+    },
+    {
+      "subject": "Accounting",
+      "index": 4,
+      "question": "The following data show the units in beginning work in process inventory, the number of units started, the number of units transferred, and the percent completion of the ending work in process for conversion. Given that materials are added at the beginning of the process, what are the equivalent units for conversion costs for each quarter using the weighted-average method? Assume that the quarters are independent.<image 1>",
+      "prediction_raw": "The image provided is a pixelated, abstract graphic with no textual or numerical data",
+      "prediction_final": "THE IMAGE PROVIDED IS A PIXELATED, ABSTRACT GRAPHIC WITH NO TEXTUAL OR NUMERICAL DATA",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.8952150344848633,
+      "generated_tokens": 16,
+      "peak_memory_gb": 8.426939010620117,
+      "throughput_tok_per_sec": 17.87280081729965,
+      "prefill_sec": 0.08782744407653809,
+      "decode_sec": 0.8942310810089111,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          543
+        ],
+        "attention_mask": [
+          1,
+          543
+        ],
+        "mm_token_type_ids": [
+          1,
+          543
+        ],
+        "pixel_values": [
+          1064,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1064,
+      "image_tokens_after": 266
+    },
+    {
+      "subject": "Accounting",
+      "index": 5,
+      "question": "Job cost sheets show the following information: <image 1> What are the balances in the work in process inventory, finished goods inventory, and cost of goods sold for January?",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "A",
+      "correct": true,
+      "latency_sec": 0.1506180763244629,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.478592872619629,
+      "throughput_tok_per_sec": 13.278618667865477,
+      "prefill_sec": 0.08910799026489258,
+      "decode_sec": 0.14724254608154297,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          741
+        ],
+        "attention_mask": [
+          1,
+          741
+        ],
+        "mm_token_type_ids": [
+          1,
+          741
+        ],
+        "pixel_values": [
+          1368,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1368,
+      "image_tokens_after": 342
+    },
+    {
+      "subject": "Accounting",
+      "index": 6,
+      "question": "You are a consultant to a large manufacturing orporation that is considering a project with thefollowing net after-tax cash flows (in millions of dollars ): <image 1> The project's beta is 1.8. Assuming that rf = 8% and E(rM) = 16%, what is the highest possible beta estimate for the project before its NPV becomes negative?",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.14859223365783691,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.33928632736206,
+      "throughput_tok_per_sec": 13.459653649230393,
+      "prefill_sec": 0.08754539489746094,
+      "decode_sec": 0.14675211906433105,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          273
+        ],
+        "attention_mask": [
+          1,
+          273
+        ],
+        "mm_token_type_ids": [
+          1,
+          273
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": 80
+    },
+    {
+      "subject": "Accounting",
+      "index": 7,
+      "question": "Tim-Buck-II rents jet skis at a beach resort. There are three models available to rent: Junior, Adult, and Expert. The rental price and variable costs for these three models are as follows: <image 1> The current product mix is 5:4:1. The three models share total fixed costs of $114,750. Calculate the sales price per composite unit.",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "A",
+      "correct": false,
+      "latency_sec": 0.14897751808166504,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.37717056274414,
+      "throughput_tok_per_sec": 13.424844404399726,
+      "prefill_sec": 0.08639192581176758,
+      "decode_sec": 0.146589994430542,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          415
+        ],
+        "attention_mask": [
+          1,
+          415
+        ],
+        "mm_token_type_ids": [
+          1,
+          415
+        ],
+        "pixel_values": [
+          768,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 768,
+      "image_tokens_after": 192
+    },
+    {
+      "subject": "Accounting",
+      "index": 8,
+      "question": "Forest Company had the following transactions during the month of December. What is the December 31 cash balance? <image 1>",
+      "prediction_raw": "D",
+      "prediction_final": "D",
+      "gold": "C",
+      "correct": false,
+      "latency_sec": 0.14856672286987305,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.33572769165039,
+      "throughput_tok_per_sec": 13.461964842232971,
+      "prefill_sec": 0.08589982986450195,
+      "decode_sec": 0.14781498908996582,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          264
+        ],
+        "attention_mask": [
+          1,
+          264
+        ],
+        "mm_token_type_ids": [
+          1,
+          264
+        ],
+        "pixel_values": [
+          264,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 264,
+      "image_tokens_after": 66
+    },
+    {
+      "subject": "Accounting",
+      "index": 9,
+      "question": "Use the following cash flow data for Rocket Transport to find Rocket's (1)net cash provided by or used in investing activities (2)Net increase or decrease in cash for the year. <image 1>",
+      "prediction_raw": "D",
+      "prediction_final": "D",
+      "gold": "A",
+      "correct": false,
+      "latency_sec": 0.1481475830078125,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.404620170593262,
+      "throughput_tok_per_sec": 13.500051498609537,
+      "prefill_sec": 0.08618330955505371,
+      "decode_sec": 0.14485979080200195,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          524
+        ],
+        "attention_mask": [
+          1,
+          524
+        ],
+        "mm_token_type_ids": [
+          1,
+          524
+        ],
+        "pixel_values": [
+          576,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 576,
+      "image_tokens_after": 144
+    }
+  ]
+}

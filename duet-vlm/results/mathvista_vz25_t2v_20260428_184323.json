@@ -1,0 +1,404 @@
+{
+  "config": {
+    "benchmark": "MathVista",
+    "split": "testmini",
+    "limit": 10,
+    "visionzip_keep_ratio": 0.25,
+    "t2v": true,
+    "max_new_tokens": 32
+  },
+  "summary": {
+    "correct": 3,
+    "total": 10,
+    "accuracy": 0.3,
+    "avg_latency_sec": 0.5878478527069092,
+    "avg_prefill_sec": 0.11888418197631836,
+    "avg_decode_sec": 0.5878478527069092,
+    "avg_peak_memory_gb": 8.739527416229247,
+    "avg_throughput_tok_per_sec": 8.932566918393922,
+    "avg_image_tokens_before": 1087.2,
+    "avg_image_tokens_after": null
+  },
+  "results": [
+    {
+      "index": 0,
+      "question": "When a spring does work on an object, we cannot find the work by simply multiplying the spring force by the object's displacement. The reason is that there is no one value for the force-it changes. However, we can split the displacement up into an infinite number of tiny parts and then approximate the force in each as being constant. Integration sums the work done in all those parts. Here we use the generic result of the integration.\r\n\r\nIn Figure, a cumin canister of mass $m=0.40 \\mathrm{~kg}$ slides across a horizontal frictionless counter with speed $v=0.50 \\mathrm{~m} / \\mathrm{s}$. It then runs into and compresses a spring of spring constant $k=750 \\mathrm{~N} / \\mathrm{m}$. When the canister is momentarily stopped by the spring, by what distance $d$ is the spring compressed?",
+      "prediction_raw": "0.023 m",
+      "prediction_final": "0.023 m",
+      "gold": "1.2",
+      "correct": false,
+      "latency_sec": 2.4428157806396484,
+      "generated_tokens": 7,
+      "peak_memory_gb": 10.950240135192871,
+      "throughput_tok_per_sec": 2.8655455951602944,
+      "prefill_sec": 0.265702486038208,
+      "decode_sec": 2.4428157806396484,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1265
+        ],
+        "attention_mask": [
+          1,
+          1265
+        ],
+        "mm_token_type_ids": [
+          1,
+          1265
+        ],
+        "pixel_values": [
+          4136,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 4136,
+      "image_tokens_after": null
+    },
+    {
+      "index": 1,
+      "question": "what is the total volume of the measuring cup?",
+      "prediction_raw": "1000ml",
+      "prediction_final": "1000ml",
+      "gold": "1000",
+      "correct": true,
+      "latency_sec": 1.0730125904083252,
+      "generated_tokens": 6,
+      "peak_memory_gb": 9.77275800704956,
+      "throughput_tok_per_sec": 5.5917330827560505,
+      "prefill_sec": 0.17645692825317383,
+      "decode_sec": 1.0730125904083252,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          818
+        ],
+        "attention_mask": [
+          1,
+          818
+        ],
+        "mm_token_type_ids": [
+          1,
+          818
+        ],
+        "pixel_values": [
+          3072,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 3072,
+      "image_tokens_after": null
+    },
+    {
+      "index": 2,
+      "question": "△ABC的两内角平分线OB、OC相交于点O，若∠A＝110°，则∠BOC＝（）",
+      "prediction_raw": "125°",
+      "prediction_final": "125°",
+      "gold": "145°",
+      "correct": false,
+      "latency_sec": 0.5010912418365479,
+      "generated_tokens": 5,
+      "peak_memory_gb": 8.296446323394775,
+      "throughput_tok_per_sec": 9.97822269188844,
+      "prefill_sec": 0.09263110160827637,
+      "decode_sec": 0.5010912418365479,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          147
+        ],
+        "attention_mask": [
+          1,
+          147
+        ],
+        "mm_token_type_ids": [
+          1,
+          147
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": null
+    },
+    {
+      "index": 3,
+      "question": "Subtract all large rubber spheres. Subtract all big shiny cylinders. How many objects are left?",
+      "prediction_raw": "5",
+      "prediction_final": "5",
+      "gold": "4",
+      "correct": false,
+      "latency_sec": 0.19698762893676758,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.300191402435303,
+      "throughput_tok_per_sec": 10.152921839787178,
+      "prefill_sec": 0.09218096733093262,
+      "decode_sec": 0.19698762893676758,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          138
+        ],
+        "attention_mask": [
+          1,
+          138
+        ],
+        "mm_token_type_ids": [
+          1,
+          138
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": null
+    },
+    {
+      "index": 4,
+      "question": "Find $m\\angle H$",
+      "prediction_raw": "100",
+      "prediction_final": "100",
+      "gold": "97",
+      "correct": false,
+      "latency_sec": 0.3824772834777832,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.300146579742432,
+      "throughput_tok_per_sec": 10.458137444474781,
+      "prefill_sec": 0.09305930137634277,
+      "decode_sec": 0.3824772834777832,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          127
+        ],
+        "attention_mask": [
+          1,
+          127
+        ],
+        "mm_token_type_ids": [
+          1,
+          127
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": null
+    },
+    {
+      "index": 5,
+      "question": "As shown in the figure, if CB = 4.0, DB = 7.0, and D is the midpoint of AC, then the length of AC is ()",
+      "prediction_raw": "14.0",
+      "prediction_final": "14.0",
+      "gold": "6cm",
+      "correct": false,
+      "latency_sec": 0.47522521018981934,
+      "generated_tokens": 5,
+      "peak_memory_gb": 8.302602767944336,
+      "throughput_tok_per_sec": 10.521327347096861,
+      "prefill_sec": 0.09175562858581543,
+      "decode_sec": 0.47522521018981934,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          160
+        ],
+        "attention_mask": [
+          1,
+          160
+        ],
+        "mm_token_type_ids": [
+          1,
+          160
+        ],
+        "pixel_values": [
+          336,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 336,
+      "image_tokens_after": null
+    },
+    {
+      "index": 6,
+      "question": "What time is shown? Answer by typing a time word, not a number. It is (_) after eight.",
+      "prediction_raw": "quarter",
+      "prediction_final": "quarter",
+      "gold": "quarter",
+      "correct": true,
+      "latency_sec": 0.19562816619873047,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.296369075775146,
+      "throughput_tok_per_sec": 10.223476705129892,
+      "prefill_sec": 0.09345626831054688,
+      "decode_sec": 0.19562816619873047,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          134
+        ],
+        "attention_mask": [
+          1,
+          134
+        ],
+        "mm_token_type_ids": [
+          1,
+          134
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": null
+    },
+    {
+      "index": 7,
+      "question": "Is the number of tiny gray bicycles that are on the left side of the brown metal sedan greater than the number of things that are to the left of the tiny green bicycle?",
+      "prediction_raw": "False",
+      "prediction_final": "False",
+      "gold": "Yes",
+      "correct": false,
+      "latency_sec": 0.21943330764770508,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.52751350402832,
+      "throughput_tok_per_sec": 9.114386605386963,
+      "prefill_sec": 0.09771275520324707,
+      "decode_sec": 0.21943330764770508,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          375
+        ],
+        "attention_mask": [
+          1,
+          375
+        ],
+        "mm_token_type_ids": [
+          1,
+          375
+        ],
+        "pixel_values": [
+          1200,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1200,
+      "image_tokens_after": null
+    },
+    {
+      "index": 8,
+      "question": "如图是一株美丽的勾股树，其中所有四边形都是正方形，所有的三角形都是直角三角形，若正方形A、B的面积分别为5、3，则最大正方形C的面积是（）",
+      "prediction_raw": "8",
+      "prediction_final": "8",
+      "gold": "8",
+      "correct": true,
+      "latency_sec": 0.1941065788269043,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.296499729156494,
+      "throughput_tok_per_sec": 10.303617796404067,
+      "prefill_sec": 0.0924532413482666,
+      "decode_sec": 0.1941065788269043,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          161
+        ],
+        "attention_mask": [
+          1,
+          161
+        ],
+        "mm_token_type_ids": [
+          1,
+          161
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": null
+    },
+    {
+      "index": 9,
+      "question": "Which object comes next?",
+      "prediction_raw": "D",
+      "prediction_final": "D",
+      "gold": "E",
+      "correct": false,
+      "latency_sec": 0.19770073890686035,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.352506637573242,
+      "throughput_tok_per_sec": 10.116300075854692,
+      "prefill_sec": 0.09343314170837402,
+      "decode_sec": 0.19770073890686035,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          201
+        ],
+        "attention_mask": [
+          1,
+          201
+        ],
+        "mm_token_type_ids": [
+          1,
+          201
+        ],
+        "pixel_values": [
+          624,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 624,
+      "image_tokens_after": null
+    }
+  ]
+}

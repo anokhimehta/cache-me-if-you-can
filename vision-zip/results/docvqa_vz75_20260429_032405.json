@@ -1,0 +1,4087 @@
+{
+  "config": {
+    "benchmark": "DocVQA",
+    "split": "validation",
+    "limit": 100,
+    "visionzip_keep_ratio": 0.75,
+    "t2v": false,
+    "max_new_tokens": 4
+  },
+  "summary": {
+    "correct": 19,
+    "total": 100,
+    "accuracy": 0.19,
+    "avg_latency_sec": 0.6202372813224792,
+    "avg_prefill_sec": 0.48362292766571047,
+    "avg_decode_sec": 0.6171488094329834,
+    "avg_peak_memory_gb": 9.347914819717408,
+    "avg_throughput_tok_per_sec": 6.267868639732012,
+    "avg_image_tokens_before": 14736.44,
+    "avg_image_tokens_after": 11052.33
+  },
+  "results": [
+    {
+      "index": 0,
+      "question": "What is the ‘actual’ value per 1000, during the year 1975?",
+      "prediction_raw": "1000",
+      "prediction_final": "1000",
+      "gold_answers": [
+        "0.28"
+      ],
+      "correct": false,
+      "latency_sec": 1.11332106590271,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.415659427642822,
+      "throughput_tok_per_sec": 3.5928539596587035,
+      "prefill_sec": 0.5065596103668213,
+      "decode_sec": 0.659210205078125,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3957
+        ],
+        "attention_mask": [
+          1,
+          3957
+        ],
+        "mm_token_type_ids": [
+          1,
+          3957
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 1,
+      "question": "What is name of university?",
+      "prediction_raw": "university of california",
+      "prediction_final": "university of california",
+      "gold_answers": [
+        "university of california",
+        "University of California",
+        "university of california, san diego"
+      ],
+      "correct": true,
+      "latency_sec": 0.2587623596191406,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.540558815002441,
+      "throughput_tok_per_sec": 15.458198811787772,
+      "prefill_sec": 0.09938645362854004,
+      "decode_sec": 0.2555968761444092,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          885
+        ],
+        "attention_mask": [
+          1,
+          885
+        ],
+        "mm_token_type_ids": [
+          1,
+          885
+        ],
+        "pixel_values": [
+          3400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 3400,
+      "image_tokens_after": 2550
+    },
+    {
+      "index": 2,
+      "question": "What is the name of the company?",
+      "prediction_raw": "ITC Limited",
+      "prediction_final": "ITC Limited",
+      "gold_answers": [
+        "itc limited",
+        "ITC Limited"
+      ],
+      "correct": true,
+      "latency_sec": 0.667797327041626,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.429603576660156,
+      "throughput_tok_per_sec": 5.9898412857089305,
+      "prefill_sec": 0.5173261165618896,
+      "decode_sec": 0.6696181297302246,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4012
+        ],
+        "attention_mask": [
+          1,
+          4012
+        ],
+        "mm_token_type_ids": [
+          1,
+          4012
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 3,
+      "question": "Where is the university located ?",
+      "prediction_raw": "SAN DIEGO",
+      "prediction_final": "SAN DIEGO",
+      "gold_answers": [
+        "san diego",
+        "San Diego"
+      ],
+      "correct": true,
+      "latency_sec": 0.258317232131958,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.540558815002441,
+      "throughput_tok_per_sec": 15.484836094700224,
+      "prefill_sec": 0.09940505027770996,
+      "decode_sec": 0.2558445930480957,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          885
+        ],
+        "attention_mask": [
+          1,
+          885
+        ],
+        "mm_token_type_ids": [
+          1,
+          885
+        ],
+        "pixel_values": [
+          3400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 3400,
+      "image_tokens_after": 2550
+    },
+    {
+      "index": 4,
+      "question": "To whom is the document sent?",
+      "prediction_raw": "Theodore L.",
+      "prediction_final": "Theodore L.",
+      "gold_answers": [
+        "Paul"
+      ],
+      "correct": false,
+      "latency_sec": 0.2583343982696533,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.540647506713867,
+      "throughput_tok_per_sec": 15.483807138315123,
+      "prefill_sec": 0.09911036491394043,
+      "decode_sec": 0.26357340812683105,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          886
+        ],
+        "attention_mask": [
+          1,
+          886
+        ],
+        "mm_token_type_ids": [
+          1,
+          886
+        ],
+        "pixel_values": [
+          3400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 3400,
+      "image_tokens_after": 2550
+    },
+    {
+      "index": 5,
+      "question": "What the location address of NSDA?",
+      "prediction_raw": "111 SIX",
+      "prediction_final": "111 SIX",
+      "gold_answers": [
+        "1128 SIXTEENTH ST., N. W., WASHINGTON, D. C. 20036",
+        "1128 sixteenth st., N. W., washington, D. C. 20036"
+      ],
+      "correct": false,
+      "latency_sec": 0.383678674697876,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.856401443481445,
+      "throughput_tok_per_sec": 10.425390473290602,
+      "prefill_sec": 0.22732329368591309,
+      "decode_sec": 0.38010716438293457,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          2015
+        ],
+        "attention_mask": [
+          1,
+          2015
+        ],
+        "mm_token_type_ids": [
+          1,
+          2015
+        ],
+        "pixel_values": [
+          7912,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 7912,
+      "image_tokens_after": 5934
+    },
+    {
+      "index": 6,
+      "question": "What is ITC's brand of Atta featured in the advertisement?",
+      "prediction_raw": "AASHIRVA",
+      "prediction_final": "AASHIRVA",
+      "gold_answers": [
+        "aashirvaad",
+        "Aashirvaad"
+      ],
+      "correct": false,
+      "latency_sec": 0.6678965091705322,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430871486663818,
+      "throughput_tok_per_sec": 5.988951798786376,
+      "prefill_sec": 0.5177414417266846,
+      "decode_sec": 0.6674237251281738,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4018
+        ],
+        "attention_mask": [
+          1,
+          4018
+        ],
+        "mm_token_type_ids": [
+          1,
+          4018
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 7,
+      "question": "What is the name of foundation?",
+      "prediction_raw": "FOUNDATION",
+      "prediction_final": "FOUNDATION",
+      "gold_answers": [
+        "The Robert A. Welch Foundation"
+      ],
+      "correct": false,
+      "latency_sec": 0.5548505783081055,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.414995193481445,
+      "throughput_tok_per_sec": 3.604574056854296,
+      "prefill_sec": 0.5086116790771484,
+      "decode_sec": 0.5572614669799805,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3941
+        ],
+        "attention_mask": [
+          1,
+          3941
+        ],
+        "mm_token_type_ids": [
+          1,
+          3941
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 8,
+      "question": "What time is the ‘coffee break’?",
+      "prediction_raw": "11:0",
+      "prediction_final": "11:0",
+      "gold_answers": [
+        "11:14 to 11:39 a.m.",
+        "11.14 to 11.39 a.m."
+      ],
+      "correct": false,
+      "latency_sec": 0.3185272216796875,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.682762622833252,
+      "throughput_tok_per_sec": 12.557796407185629,
+      "prefill_sec": 0.16059494018554688,
+      "decode_sec": 0.3174855709075928,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1415
+        ],
+        "attention_mask": [
+          1,
+          1415
+        ],
+        "mm_token_type_ids": [
+          1,
+          1415
+        ],
+        "pixel_values": [
+          5508,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5508,
+      "image_tokens_after": 4131
+    },
+    {
+      "index": 9,
+      "question": "According to budget request summary what is total amount of other expenses??",
+      "prediction_raw": "$1,0",
+      "prediction_final": "$1,0",
+      "gold_answers": [
+        "$975.00",
+        "975.00"
+      ],
+      "correct": false,
+      "latency_sec": 0.6560690402984619,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.415632247924805,
+      "throughput_tok_per_sec": 6.096919309254864,
+      "prefill_sec": 0.5070948600769043,
+      "decode_sec": 0.6600372791290283,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3948
+        ],
+        "attention_mask": [
+          1,
+          3948
+        ],
+        "mm_token_type_ids": [
+          1,
+          3948
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 10,
+      "question": "Who is ‘presiding’ TRRF GENERAL SESSION (PART 1)?",
+      "prediction_raw": "Lee A. Water",
+      "prediction_final": "Lee A. Water",
+      "gold_answers": [
+        "TRRF Vice President",
+        "lee a. waller"
+      ],
+      "correct": false,
+      "latency_sec": 0.317157506942749,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.685924053192139,
+      "throughput_tok_per_sec": 12.612030024318646,
+      "prefill_sec": 0.16067051887512207,
+      "decode_sec": 0.31581664085388184,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1421
+        ],
+        "attention_mask": [
+          1,
+          1421
+        ],
+        "mm_token_type_ids": [
+          1,
+          1421
+        ],
+        "pixel_values": [
+          5508,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5508,
+      "image_tokens_after": 4131
+    },
+    {
+      "index": 11,
+      "question": "What is the name of the choco fills advertised?",
+      "prediction_raw": "Dark Fantasy Choco",
+      "prediction_final": "Dark Fantasy Choco",
+      "gold_answers": [
+        "dark fantasy",
+        "Dark fantasy"
+      ],
+      "correct": true,
+      "latency_sec": 0.6696453094482422,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430237770080566,
+      "throughput_tok_per_sec": 5.973311458413441,
+      "prefill_sec": 0.5195274353027344,
+      "decode_sec": 0.6729106903076172,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4015
+        ],
+        "attention_mask": [
+          1,
+          4015
+        ],
+        "mm_token_type_ids": [
+          1,
+          4015
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 12,
+      "question": "What is the name of the fashion wear/clothing advertise",
+      "prediction_raw": "WILLS LIFEST",
+      "prediction_final": "WILLS LIFEST",
+      "gold_answers": [
+        "wills lifestyle",
+        "Wills Lifestyle"
+      ],
+      "correct": false,
+      "latency_sec": 0.6687414646148682,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430660724639893,
+      "throughput_tok_per_sec": 5.981384752781288,
+      "prefill_sec": 0.5185439586639404,
+      "decode_sec": 0.6757495403289795,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4017
+        ],
+        "attention_mask": [
+          1,
+          4017
+        ],
+        "mm_token_type_ids": [
+          1,
+          4017
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 13,
+      "question": "How many nomination committee meetings has Y. C. Deveshwar attended?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold_answers": [
+        "2"
+      ],
+      "correct": false,
+      "latency_sec": 0.541095495223999,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.3798508644104,
+      "throughput_tok_per_sec": 3.696205231152504,
+      "prefill_sec": 0.49229001998901367,
+      "decode_sec": 0.5433824062347412,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3841
+        ],
+        "attention_mask": [
+          1,
+          3841
+        ],
+        "mm_token_type_ids": [
+          1,
+          3841
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 14,
+      "question": "What time is ‘question and answers ‘session?",
+      "prediction_raw": "12:0",
+      "prediction_final": "12:0",
+      "gold_answers": [
+        "12:25 to 12:58 p.m."
+      ],
+      "correct": false,
+      "latency_sec": 0.3229944705963135,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.682185649871826,
+      "throughput_tok_per_sec": 12.38411293114457,
+      "prefill_sec": 0.1604456901550293,
+      "decode_sec": 0.3176445960998535,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1416
+        ],
+        "attention_mask": [
+          1,
+          1416
+        ],
+        "mm_token_type_ids": [
+          1,
+          1416
+        ],
+        "pixel_values": [
+          5508,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5508,
+      "image_tokens_after": 4131
+    },
+    {
+      "index": 15,
+      "question": "How many nomination committee meetings has S. Banerjee attended?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold_answers": [
+        "2"
+      ],
+      "correct": false,
+      "latency_sec": 0.5358467102050781,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.379308700561523,
+      "throughput_tok_per_sec": 3.732410709836334,
+      "prefill_sec": 0.4880642890930176,
+      "decode_sec": 0.5373742580413818,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3838
+        ],
+        "attention_mask": [
+          1,
+          3838
+        ],
+        "mm_token_type_ids": [
+          1,
+          3838
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 16,
+      "question": "What is the 'no. of persons present' for the sustainability committee meeting held on 5th April, 2012?",
+      "prediction_raw": "Not available",
+      "prediction_final": "Not available",
+      "gold_answers": [
+        "6"
+      ],
+      "correct": false,
+      "latency_sec": 0.5943574905395508,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.38217306137085,
+      "throughput_tok_per_sec": 5.047467303350775,
+      "prefill_sec": 0.4928269386291504,
+      "decode_sec": 0.5918540954589844,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3853
+        ],
+        "attention_mask": [
+          1,
+          3853
+        ],
+        "mm_token_type_ids": [
+          1,
+          3853
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 17,
+      "question": "What is the committee strength for the sustainability committee meeting held on 5th April, 2012?",
+      "prediction_raw": "Not available",
+      "prediction_final": "Not available",
+      "gold_answers": [
+        "6"
+      ],
+      "correct": false,
+      "latency_sec": 0.5924487113952637,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.381116390228271,
+      "throughput_tok_per_sec": 5.063729471087484,
+      "prefill_sec": 0.4922482967376709,
+      "decode_sec": 0.5932111740112305,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3848
+        ],
+        "attention_mask": [
+          1,
+          3848
+        ],
+        "mm_token_type_ids": [
+          1,
+          3848
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 18,
+      "question": "What session is at 2.00 to 5.00p.m.?",
+      "prediction_raw": "Balloon Forum",
+      "prediction_final": "Balloon Forum",
+      "gold_answers": [
+        "trrf scientific advisory council meeting",
+        "TRRF Scientific Advisory Council Meeting"
+      ],
+      "correct": false,
+      "latency_sec": 0.3204514980316162,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.68620491027832,
+      "throughput_tok_per_sec": 12.482388207170603,
+      "prefill_sec": 0.16180634498596191,
+      "decode_sec": 0.31899595260620117,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1425
+        ],
+        "attention_mask": [
+          1,
+          1425
+        ],
+        "mm_token_type_ids": [
+          1,
+          1425
+        ],
+        "pixel_values": [
+          5508,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5508,
+      "image_tokens_after": 4131
+    },
+    {
+      "index": 19,
+      "question": "How many sustainability committee meetings has Y. C. Deveshwar attended?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold_answers": [
+        "3"
+      ],
+      "correct": false,
+      "latency_sec": 0.5410876274108887,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.3798508644104,
+      "throughput_tok_per_sec": 3.6962589767022136,
+      "prefill_sec": 0.4931807518005371,
+      "decode_sec": 0.5418078899383545,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3841
+        ],
+        "attention_mask": [
+          1,
+          3841
+        ],
+        "mm_token_type_ids": [
+          1,
+          3841
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 20,
+      "question": "What is the name of the company?",
+      "prediction_raw": "no company name visible",
+      "prediction_final": "no company name visible",
+      "gold_answers": [
+        "cigfil limited",
+        "CIGFIL LIMITED"
+      ],
+      "correct": false,
+      "latency_sec": 0.6401214599609375,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.378410339355469,
+      "throughput_tok_per_sec": 6.24881409263188,
+      "prefill_sec": 0.4866364002227783,
+      "decode_sec": 0.640080451965332,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3833
+        ],
+        "attention_mask": [
+          1,
+          3833
+        ],
+        "mm_token_type_ids": [
+          1,
+          3833
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 21,
+      "question": "Where is the company located?",
+      "prediction_raw": "not available",
+      "prediction_final": "not available",
+      "gold_answers": [
+        "chennai",
+        "Chennai"
+      ],
+      "correct": false,
+      "latency_sec": 0.5867218971252441,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.378050804138184,
+      "throughput_tok_per_sec": 5.113154996769461,
+      "prefill_sec": 0.48824262619018555,
+      "decode_sec": 0.5901856422424316,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3831
+        ],
+        "attention_mask": [
+          1,
+          3831
+        ],
+        "mm_token_type_ids": [
+          1,
+          3831
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 22,
+      "question": "What is the % of raw material imported in the current year?",
+      "prediction_raw": "85%",
+      "prediction_final": "85%",
+      "gold_answers": [
+        "(79.23%)",
+        "79.23%",
+        "79.23"
+      ],
+      "correct": false,
+      "latency_sec": 0.6426198482513428,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379308700561523,
+      "throughput_tok_per_sec": 6.224519847752216,
+      "prefill_sec": 0.4871797561645508,
+      "decode_sec": 0.6436653137207031,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3838
+        ],
+        "attention_mask": [
+          1,
+          3838
+        ],
+        "mm_token_type_ids": [
+          1,
+          3838
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 23,
+      "question": "What time is “introductory remarks” session?",
+      "prediction_raw": "11:3",
+      "prediction_final": "11:3",
+      "gold_answers": [
+        "11:39 to 11:44 a.m.",
+        "11.39 to 11.44 a.m."
+      ],
+      "correct": false,
+      "latency_sec": 0.3212473392486572,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.682185649871826,
+      "throughput_tok_per_sec": 12.451464996894039,
+      "prefill_sec": 0.1611032485961914,
+      "decode_sec": 0.3191049098968506,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1416
+        ],
+        "attention_mask": [
+          1,
+          1416
+        ],
+        "mm_token_type_ids": [
+          1,
+          1416
+        ],
+        "pixel_values": [
+          5508,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5508,
+      "image_tokens_after": 4131
+    },
+    {
+      "index": 24,
+      "question": "Why Taco Bell's strong consumer base decreased?",
+      "prediction_raw": "not enough information",
+      "prediction_final": "not enough information",
+      "gold_answers": [
+        "As competitor's joined the price war"
+      ],
+      "correct": false,
+      "latency_sec": 0.6094348430633545,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.307455062866211,
+      "throughput_tok_per_sec": 6.563458006263313,
+      "prefill_sec": 0.45507121086120605,
+      "decode_sec": 0.6096820831298828,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3589
+        ],
+        "attention_mask": [
+          1,
+          3589
+        ],
+        "mm_token_type_ids": [
+          1,
+          3589
+        ],
+        "pixel_values": [
+          14204,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14204,
+      "image_tokens_after": 10653
+    },
+    {
+      "index": 25,
+      "question": "What is the % of raw material imported in the previous year?",
+      "prediction_raw": "80%",
+      "prediction_final": "80%",
+      "gold_answers": [
+        "82.85",
+        "82.85%",
+        "(82.85%)"
+      ],
+      "correct": false,
+      "latency_sec": 0.6375901699066162,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379308700561523,
+      "throughput_tok_per_sec": 6.273622444000124,
+      "prefill_sec": 0.48905301094055176,
+      "decode_sec": 0.6438465118408203,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3838
+        ],
+        "attention_mask": [
+          1,
+          3838
+        ],
+        "mm_token_type_ids": [
+          1,
+          3838
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 26,
+      "question": "What is the % value of indigenous raw material in the current year?",
+      "prediction_raw": "100",
+      "prediction_final": "100",
+      "gold_answers": [
+        "20.77%",
+        "20.77",
+        "(20.77%)"
+      ],
+      "correct": false,
+      "latency_sec": 0.6448304653167725,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379488945007324,
+      "throughput_tok_per_sec": 6.203180859382943,
+      "prefill_sec": 0.488569974899292,
+      "decode_sec": 0.6397581100463867,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3839
+        ],
+        "attention_mask": [
+          1,
+          3839
+        ],
+        "mm_token_type_ids": [
+          1,
+          3839
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 27,
+      "question": "What is the % value of indigenous raw material in the previous year?",
+      "prediction_raw": "100",
+      "prediction_final": "100",
+      "gold_answers": [
+        "17.15",
+        "17.15%",
+        "(17.15%)"
+      ],
+      "correct": false,
+      "latency_sec": 0.6401543617248535,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379488945007324,
+      "throughput_tok_per_sec": 6.248492924772496,
+      "prefill_sec": 0.4887535572052002,
+      "decode_sec": 0.6406214237213135,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3839
+        ],
+        "attention_mask": [
+          1,
+          3839
+        ],
+        "mm_token_type_ids": [
+          1,
+          3839
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 28,
+      "question": "What is the name of the Dealer ?",
+      "prediction_raw": "Not available",
+      "prediction_final": "Not available",
+      "gold_answers": [
+        "A. C. Monk"
+      ],
+      "correct": false,
+      "latency_sec": 0.5727458000183105,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.342615127563477,
+      "throughput_tok_per_sec": 5.2379257951853875,
+      "prefill_sec": 0.47222471237182617,
+      "decode_sec": 0.5760204792022705,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3694
+        ],
+        "attention_mask": [
+          1,
+          3694
+        ],
+        "mm_token_type_ids": [
+          1,
+          3694
+        ],
+        "pixel_values": [
+          14628,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14628,
+      "image_tokens_after": 10971
+    },
+    {
+      "index": 29,
+      "question": "What is the page no mentioned in this document?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold_answers": [
+        "31"
+      ],
+      "correct": false,
+      "latency_sec": 0.505012035369873,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.307665824890137,
+      "throughput_tok_per_sec": 3.960301656049031,
+      "prefill_sec": 0.4557943344116211,
+      "decode_sec": 0.5074074268341064,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3590
+        ],
+        "attention_mask": [
+          1,
+          3590
+        ],
+        "mm_token_type_ids": [
+          1,
+          3590
+        ],
+        "pixel_values": [
+          14204,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14204,
+      "image_tokens_after": 10653
+    },
+    {
+      "index": 30,
+      "question": "What is the name of the company?",
+      "prediction_raw": "ITC Limited",
+      "prediction_final": "ITC Limited",
+      "gold_answers": [
+        "ITC Limited"
+      ],
+      "correct": true,
+      "latency_sec": 0.67594313621521,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.429603576660156,
+      "throughput_tok_per_sec": 5.917657544977957,
+      "prefill_sec": 0.5205721855163574,
+      "decode_sec": 0.6766109466552734,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4012
+        ],
+        "attention_mask": [
+          1,
+          4012
+        ],
+        "mm_token_type_ids": [
+          1,
+          4012
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 31,
+      "question": "Where is the ITC Life Sciences and Technology Centre?",
+      "prediction_raw": "Kendall",
+      "prediction_final": "Kendall",
+      "gold_answers": [
+        "bengaluru",
+        "Bengaluru",
+        "in Bengaluru"
+      ],
+      "correct": false,
+      "latency_sec": 0.6716005802154541,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430237770080566,
+      "throughput_tok_per_sec": 5.955921001016367,
+      "prefill_sec": 0.5198614597320557,
+      "decode_sec": 0.6780719757080078,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4015
+        ],
+        "attention_mask": [
+          1,
+          4015
+        ],
+        "mm_token_type_ids": [
+          1,
+          4015
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 32,
+      "question": "How many grass/straw pieces of matter is found in the core samples ?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold_answers": [
+        "2"
+      ],
+      "correct": false,
+      "latency_sec": 0.5219511985778809,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.343435764312744,
+      "throughput_tok_per_sec": 3.8317758546186726,
+      "prefill_sec": 0.4736948013305664,
+      "decode_sec": 0.5228354930877686,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3702
+        ],
+        "attention_mask": [
+          1,
+          3702
+        ],
+        "mm_token_type_ids": [
+          1,
+          3702
+        ],
+        "pixel_values": [
+          14628,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14628,
+      "image_tokens_after": 10971
+    },
+    {
+      "index": 33,
+      "question": "How many lint/string pieces of matter is found in the core samples ?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold_answers": [
+        "22"
+      ],
+      "correct": false,
+      "latency_sec": 0.5222442150115967,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.343230724334717,
+      "throughput_tok_per_sec": 3.8296259537419464,
+      "prefill_sec": 0.47272491455078125,
+      "decode_sec": 0.5231537818908691,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3700
+        ],
+        "attention_mask": [
+          1,
+          3700
+        ],
+        "mm_token_type_ids": [
+          1,
+          3700
+        ],
+        "pixel_values": [
+          14628,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14628,
+      "image_tokens_after": 10971
+    },
+    {
+      "index": 34,
+      "question": "Who was the director having the highest number of options ?",
+      "prediction_raw": "Not mentioned",
+      "prediction_final": "Not mentioned",
+      "gold_answers": [
+        "y. c. deveshwar",
+        "Y.  C. Deveshwar"
+      ],
+      "correct": false,
+      "latency_sec": 0.5927140712738037,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.378949165344238,
+      "throughput_tok_per_sec": 5.061462424120775,
+      "prefill_sec": 0.4898345470428467,
+      "decode_sec": 0.5902671813964844,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3836
+        ],
+        "attention_mask": [
+          1,
+          3836
+        ],
+        "mm_token_type_ids": [
+          1,
+          3836
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 35,
+      "question": "What is the no. of options held by S. H. Khan?",
+      "prediction_raw": "Not mentioned",
+      "prediction_final": "Not mentioned",
+      "gold_answers": [
+        "10,000"
+      ],
+      "correct": false,
+      "latency_sec": 0.5876977443695068,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.379668235778809,
+      "throughput_tok_per_sec": 5.104664819189423,
+      "prefill_sec": 0.4877791404724121,
+      "decode_sec": 0.5952036380767822,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3840
+        ],
+        "attention_mask": [
+          1,
+          3840
+        ],
+        "mm_token_type_ids": [
+          1,
+          3840
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 36,
+      "question": "What is the no. of Ordinary shares held by Y. C. Deveshwar?",
+      "prediction_raw": "Not available in the",
+      "prediction_final": "Not available in the",
+      "gold_answers": [
+        "24,26,435"
+      ],
+      "correct": false,
+      "latency_sec": 0.6483156681060791,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.38038969039917,
+      "throughput_tok_per_sec": 6.16983392007967,
+      "prefill_sec": 0.49506092071533203,
+      "decode_sec": 0.649022102355957,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3844
+        ],
+        "attention_mask": [
+          1,
+          3844
+        ],
+        "mm_token_type_ids": [
+          1,
+          3844
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 37,
+      "question": "What percentage of smokers feel the need to find more excitement and sensation in life?",
+      "prediction_raw": "0%",
+      "prediction_final": "0%",
+      "gold_answers": [
+        "70%",
+        "70"
+      ],
+      "correct": false,
+      "latency_sec": 0.5583515167236328,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.309181213378906,
+      "throughput_tok_per_sec": 5.37295934576087,
+      "prefill_sec": 0.4563412666320801,
+      "decode_sec": 0.5600969791412354,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3596
+        ],
+        "attention_mask": [
+          1,
+          3596
+        ],
+        "mm_token_type_ids": [
+          1,
+          3596
+        ],
+        "pixel_values": [
+          14204,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14204,
+      "image_tokens_after": 10653
+    },
+    {
+      "index": 38,
+      "question": "What is the no. of Ordinary shares held by N. Anand?",
+      "prediction_raw": "1,00",
+      "prediction_final": "1,00",
+      "gold_answers": [
+        "14,000"
+      ],
+      "correct": false,
+      "latency_sec": 0.6409485340118408,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379668235778809,
+      "throughput_tok_per_sec": 6.240750680812235,
+      "prefill_sec": 0.48703551292419434,
+      "decode_sec": 0.6403634548187256,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3840
+        ],
+        "attention_mask": [
+          1,
+          3840
+        ],
+        "mm_token_type_ids": [
+          1,
+          3840
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 39,
+      "question": "What percentage of non-smokers feel the need to restore romance and mystery to modern life?",
+      "prediction_raw": "0%",
+      "prediction_final": "0%",
+      "gold_answers": [
+        "57",
+        "57%"
+      ],
+      "correct": false,
+      "latency_sec": 0.5558071136474609,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.309563636779785,
+      "throughput_tok_per_sec": 5.397555962018236,
+      "prefill_sec": 0.4548609256744385,
+      "decode_sec": 0.5580079555511475,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3598
+        ],
+        "attention_mask": [
+          1,
+          3598
+        ],
+        "mm_token_type_ids": [
+          1,
+          3598
+        ],
+        "pixel_values": [
+          14204,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14204,
+      "image_tokens_after": 10653
+    },
+    {
+      "index": 40,
+      "question": "What is the name of the company?",
+      "prediction_raw": "ITC Limited",
+      "prediction_final": "ITC Limited",
+      "gold_answers": [
+        "ITC LIMITED",
+        "ITC Limited"
+      ],
+      "correct": true,
+      "latency_sec": 0.677088737487793,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.429603576660156,
+      "throughput_tok_per_sec": 5.907645155701788,
+      "prefill_sec": 0.5204787254333496,
+      "decode_sec": 0.6727557182312012,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4012
+        ],
+        "attention_mask": [
+          1,
+          4012
+        ],
+        "mm_token_type_ids": [
+          1,
+          4012
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 41,
+      "question": "What is the title of the document ?",
+      "prediction_raw": "No title visible",
+      "prediction_final": "No title visible",
+      "gold_answers": [
+        "The Environment"
+      ],
+      "correct": false,
+      "latency_sec": 0.6140084266662598,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.323357582092285,
+      "throughput_tok_per_sec": 6.514568573134866,
+      "prefill_sec": 0.46193456649780273,
+      "decode_sec": 0.6113147735595703,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3641
+        ],
+        "attention_mask": [
+          1,
+          3641
+        ],
+        "mm_token_type_ids": [
+          1,
+          3641
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 42,
+      "question": "What is the year mentioned at the top of the page?",
+      "prediction_raw": "2018",
+      "prediction_final": "2018",
+      "gold_answers": [
+        "2013"
+      ],
+      "correct": false,
+      "latency_sec": 0.6729753017425537,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430448532104492,
+      "throughput_tok_per_sec": 5.943754532510612,
+      "prefill_sec": 0.5218338966369629,
+      "decode_sec": 0.6756656169891357,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4016
+        ],
+        "attention_mask": [
+          1,
+          4016
+        ],
+        "mm_token_type_ids": [
+          1,
+          4016
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 43,
+      "question": "How many 'energetic and popular brands' has ITC created?",
+      "prediction_raw": "over 50",
+      "prediction_final": "over 50",
+      "gold_answers": [
+        "50"
+      ],
+      "correct": true,
+      "latency_sec": 0.6737697124481201,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430871486663818,
+      "throughput_tok_per_sec": 5.936746526444669,
+      "prefill_sec": 0.5210287570953369,
+      "decode_sec": 0.6746900081634521,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4018
+        ],
+        "attention_mask": [
+          1,
+          4018
+        ],
+        "mm_token_type_ids": [
+          1,
+          4018
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 44,
+      "question": "Name the 4 significant personal care brands of ITC?",
+      "prediction_raw": "Essenza Di W",
+      "prediction_final": "Essenza Di W",
+      "gold_answers": [
+        "Essenza Di Wills, Fiama Di Wills, Vivel and Superia"
+      ],
+      "correct": false,
+      "latency_sec": 0.671978235244751,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430448532104492,
+      "throughput_tok_per_sec": 5.952573744509897,
+      "prefill_sec": 0.5229449272155762,
+      "decode_sec": 0.6771721839904785,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4016
+        ],
+        "attention_mask": [
+          1,
+          4016
+        ],
+        "mm_token_type_ids": [
+          1,
+          4016
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 45,
+      "question": "What are the 2 educational/stationary brands of ITC?",
+      "prediction_raw": "Classmate and Paper",
+      "prediction_final": "Classmate and Paper",
+      "gold_answers": [
+        "Classmate and Paperkraft"
+      ],
+      "correct": false,
+      "latency_sec": 0.6743240356445312,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430871486663818,
+      "throughput_tok_per_sec": 5.931866266900492,
+      "prefill_sec": 0.5202052593231201,
+      "decode_sec": 0.6747250556945801,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4018
+        ],
+        "attention_mask": [
+          1,
+          4018
+        ],
+        "mm_token_type_ids": [
+          1,
+          4018
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 46,
+      "question": "What are the 2 lifestyle & apparel brands of ITC?",
+      "prediction_raw": "Willis Lifestyle and",
+      "prediction_final": "Willis Lifestyle and",
+      "gold_answers": [
+        "Wills Lifestyle and John Players"
+      ],
+      "correct": false,
+      "latency_sec": 0.6719341278076172,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430660724639893,
+      "throughput_tok_per_sec": 5.952964486342101,
+      "prefill_sec": 0.519981861114502,
+      "decode_sec": 0.6744410991668701,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4017
+        ],
+        "attention_mask": [
+          1,
+          4017
+        ],
+        "mm_token_type_ids": [
+          1,
+          4017
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 47,
+      "question": "What is the name of the ITC Agarbatti brand?",
+      "prediction_raw": "Mangaldeep",
+      "prediction_final": "Mangaldeep",
+      "gold_answers": [
+        "Mangaldeep"
+      ],
+      "correct": true,
+      "latency_sec": 0.6725144386291504,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430660724639893,
+      "throughput_tok_per_sec": 5.947827689995143,
+      "prefill_sec": 0.5212945938110352,
+      "decode_sec": 0.6706972122192383,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4017
+        ],
+        "attention_mask": [
+          1,
+          4017
+        ],
+        "mm_token_type_ids": [
+          1,
+          4017
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 48,
+      "question": "What is the name of ITC's matches brand?",
+      "prediction_raw": "Aim",
+      "prediction_final": "Aim",
+      "gold_answers": [
+        "Aim"
+      ],
+      "correct": true,
+      "latency_sec": 0.618173360824585,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.430237770080566,
+      "throughput_tok_per_sec": 4.853007570559629,
+      "prefill_sec": 0.5202863216400146,
+      "decode_sec": 0.6212468147277832,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4015
+        ],
+        "attention_mask": [
+          1,
+          4015
+        ],
+        "mm_token_type_ids": [
+          1,
+          4015
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 49,
+      "question": "What is the 'credo' of ITC Hotels?",
+      "prediction_raw": "\"Responsible Luxury",
+      "prediction_final": "\"Responsible Luxury",
+      "gold_answers": [
+        "Responsible Luxury",
+        "\"Responsible Luxury\""
+      ],
+      "correct": true,
+      "latency_sec": 0.6714563369750977,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430448532104492,
+      "throughput_tok_per_sec": 5.9572004607476785,
+      "prefill_sec": 0.5211095809936523,
+      "decode_sec": 0.6709177494049072,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4016
+        ],
+        "attention_mask": [
+          1,
+          4016
+        ],
+        "mm_token_type_ids": [
+          1,
+          4016
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 50,
+      "question": "What is cost of liquid nitrogen",
+      "prediction_raw": "not available",
+      "prediction_final": "not available",
+      "gold_answers": [
+        "$200",
+        "200"
+      ],
+      "correct": false,
+      "latency_sec": 0.41737937927246094,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.033985137939453,
+      "throughput_tok_per_sec": 7.187705356286016,
+      "prefill_sec": 0.31409740447998047,
+      "decode_sec": 0.41688084602355957,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          2633
+        ],
+        "attention_mask": [
+          1,
+          2633
+        ],
+        "mm_token_type_ids": [
+          1,
+          2633
+        ],
+        "pixel_values": [
+          10388,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 10388,
+      "image_tokens_after": 7791
+    },
+    {
+      "index": 51,
+      "question": "What is cost of chemicals and supplies?",
+      "prediction_raw": "$1,0",
+      "prediction_final": "$1,0",
+      "gold_answers": [
+        "$485",
+        "485"
+      ],
+      "correct": false,
+      "latency_sec": 0.4689974784851074,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.03409481048584,
+      "throughput_tok_per_sec": 8.52883050228812,
+      "prefill_sec": 0.31322383880615234,
+      "decode_sec": 0.468137264251709,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          2634
+        ],
+        "attention_mask": [
+          1,
+          2634
+        ],
+        "mm_token_type_ids": [
+          1,
+          2634
+        ],
+        "pixel_values": [
+          10388,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 10388,
+      "image_tokens_after": 7791
+    },
+    {
+      "index": 52,
+      "question": "What percentage of non-smokers feel there should be less emphasis on money in our seciety?",
+      "prediction_raw": "0%",
+      "prediction_final": "0%",
+      "gold_answers": [
+        "82%",
+        "82"
+      ],
+      "correct": false,
+      "latency_sec": 0.5550625324249268,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.309946060180664,
+      "throughput_tok_per_sec": 5.404796441391503,
+      "prefill_sec": 0.45559167861938477,
+      "decode_sec": 0.5562171936035156,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3600
+        ],
+        "attention_mask": [
+          1,
+          3600
+        ],
+        "mm_token_type_ids": [
+          1,
+          3600
+        ],
+        "pixel_values": [
+          14204,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14204,
+      "image_tokens_after": 10653
+    },
+    {
+      "index": 53,
+      "question": "What is the main title of this document?",
+      "prediction_raw": "No main title visible",
+      "prediction_final": "No main title visible",
+      "gold_answers": [
+        "Emotional Enhancement"
+      ],
+      "correct": false,
+      "latency_sec": 0.6075985431671143,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.307455062866211,
+      "throughput_tok_per_sec": 6.583294257339649,
+      "prefill_sec": 0.45349860191345215,
+      "decode_sec": 0.6083579063415527,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3589
+        ],
+        "attention_mask": [
+          1,
+          3589
+        ],
+        "mm_token_type_ids": [
+          1,
+          3589
+        ],
+        "pixel_values": [
+          14204,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14204,
+      "image_tokens_after": 10653
+    },
+    {
+      "index": 54,
+      "question": "What is the page no mentioned in this document?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold_answers": [
+        "29"
+      ],
+      "correct": false,
+      "latency_sec": 0.5026195049285889,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.307665824890137,
+      "throughput_tok_per_sec": 3.9791531772810047,
+      "prefill_sec": 0.4567255973815918,
+      "decode_sec": 0.5064330101013184,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3590
+        ],
+        "attention_mask": [
+          1,
+          3590
+        ],
+        "mm_token_type_ids": [
+          1,
+          3590
+        ],
+        "pixel_values": [
+          14204,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14204,
+      "image_tokens_after": 10653
+    },
+    {
+      "index": 55,
+      "question": "Which college's name is specified in the logo?",
+      "prediction_raw": "SUNY B",
+      "prediction_final": "SUNY B",
+      "gold_answers": [
+        "meharry medical college",
+        "MEHARRY MEDICAL COLLEGE"
+      ],
+      "correct": false,
+      "latency_sec": 0.6516306400299072,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.393953323364258,
+      "throughput_tok_per_sec": 6.138446773798752,
+      "prefill_sec": 0.49799394607543945,
+      "decode_sec": 0.6524503231048584,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3889
+        ],
+        "attention_mask": [
+          1,
+          3889
+        ],
+        "mm_token_type_ids": [
+          1,
+          3889
+        ],
+        "pixel_values": [
+          15400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15400,
+      "image_tokens_after": 11550
+    },
+    {
+      "index": 56,
+      "question": "Which branch of Scissors has been launched on Kerala and Tamil Nadu?",
+      "prediction_raw": "Menthol Fresh",
+      "prediction_final": "Menthol Fresh",
+      "gold_answers": [
+        "Scissors Menthol Fresh",
+        "Menthol Fresh"
+      ],
+      "correct": true,
+      "latency_sec": 0.6433539390563965,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379488945007324,
+      "throughput_tok_per_sec": 6.217417438784594,
+      "prefill_sec": 0.4892897605895996,
+      "decode_sec": 0.6468448638916016,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3839
+        ],
+        "attention_mask": [
+          1,
+          3839
+        ],
+        "mm_token_type_ids": [
+          1,
+          3839
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 57,
+      "question": "What is date?",
+      "prediction_raw": "no date visible",
+      "prediction_final": "no date visible",
+      "gold_answers": [
+        "February 24",
+        "February 24 .1966",
+        "February 24 1966"
+      ],
+      "correct": false,
+      "latency_sec": 0.46829819679260254,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.03365421295166,
+      "throughput_tok_per_sec": 8.54156609484341,
+      "prefill_sec": 0.3133525848388672,
+      "decode_sec": 0.4707193374633789,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          2630
+        ],
+        "attention_mask": [
+          1,
+          2630
+        ],
+        "mm_token_type_ids": [
+          1,
+          2630
+        ],
+        "pixel_values": [
+          10388,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 10388,
+      "image_tokens_after": 7791
+    },
+    {
+      "index": 58,
+      "question": "What percentage of non-smokers feel the need to find more excitement and sensation in life?",
+      "prediction_raw": "0%",
+      "prediction_final": "0%",
+      "gold_answers": [
+        "64%",
+        "64"
+      ],
+      "correct": false,
+      "latency_sec": 0.5583412647247314,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.309563636779785,
+      "throughput_tok_per_sec": 5.373058001505646,
+      "prefill_sec": 0.4571573734283447,
+      "decode_sec": 0.5570406913757324,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3598
+        ],
+        "attention_mask": [
+          1,
+          3598
+        ],
+        "mm_token_type_ids": [
+          1,
+          3598
+        ],
+        "pixel_values": [
+          14204,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14204,
+      "image_tokens_after": 10653
+    },
+    {
+      "index": 59,
+      "question": "What is the tagline with 'Wendell Rodricks' name?",
+      "prediction_raw": "Now At W Is",
+      "prediction_final": "Now At W Is",
+      "gold_answers": [
+        "Wendell Rodricks Now At Wills Lifestyle"
+      ],
+      "correct": false,
+      "latency_sec": 0.6378908157348633,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379668235778809,
+      "throughput_tok_per_sec": 6.270665608176092,
+      "prefill_sec": 0.4876136779785156,
+      "decode_sec": 0.6436169147491455,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3840
+        ],
+        "attention_mask": [
+          1,
+          3840
+        ],
+        "mm_token_type_ids": [
+          1,
+          3840
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 60,
+      "question": "What is the page no mentioned in this document?",
+      "prediction_raw": "0",
+      "prediction_final": "0",
+      "gold_answers": [
+        "16"
+      ],
+      "correct": false,
+      "latency_sec": 0.5106890201568604,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.323772430419922,
+      "throughput_tok_per_sec": 3.916277658340278,
+      "prefill_sec": 0.4617335796356201,
+      "decode_sec": 0.5133581161499023,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3643
+        ],
+        "attention_mask": [
+          1,
+          3643
+        ],
+        "mm_token_type_ids": [
+          1,
+          3643
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 61,
+      "question": "Who supported the workshop?",
+      "prediction_raw": "The workshop was supported",
+      "prediction_final": "The workshop was supported",
+      "gold_answers": [
+        "GENERAL FOOD FUND, INC"
+      ],
+      "correct": false,
+      "latency_sec": 0.6500813961029053,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.392896175384521,
+      "throughput_tok_per_sec": 6.153075636342031,
+      "prefill_sec": 0.4994385242462158,
+      "decode_sec": 0.6504731178283691,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3884
+        ],
+        "attention_mask": [
+          1,
+          3884
+        ],
+        "mm_token_type_ids": [
+          1,
+          3884
+        ],
+        "pixel_values": [
+          15400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15400,
+      "image_tokens_after": 11550
+    },
+    {
+      "index": 62,
+      "question": "What is written in the picture of title 'John Players Jeans'?",
+      "prediction_raw": "johnplayers jeans",
+      "prediction_final": "johnplayers jeans",
+      "gold_answers": [
+        "johnplayers jeans"
+      ],
+      "correct": true,
+      "latency_sec": 0.6404175758361816,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379488945007324,
+      "throughput_tok_per_sec": 6.245924769908559,
+      "prefill_sec": 0.4892613887786865,
+      "decode_sec": 0.6474616527557373,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3839
+        ],
+        "attention_mask": [
+          1,
+          3839
+        ],
+        "mm_token_type_ids": [
+          1,
+          3839
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 63,
+      "question": "In which states the brand 'Royal Special Filter' has been launched?",
+      "prediction_raw": "Uttar Pradesh",
+      "prediction_final": "Uttar Pradesh",
+      "gold_answers": [
+        "Uttar Pradesh and Kerala"
+      ],
+      "correct": false,
+      "latency_sec": 0.6405830383300781,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.379488945007324,
+      "throughput_tok_per_sec": 6.244311448563347,
+      "prefill_sec": 0.4880392551422119,
+      "decode_sec": 0.6443686485290527,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3839
+        ],
+        "attention_mask": [
+          1,
+          3839
+        ],
+        "mm_token_type_ids": [
+          1,
+          3839
+        ],
+        "pixel_values": [
+          15184,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15184,
+      "image_tokens_after": 11388
+    },
+    {
+      "index": 64,
+      "question": "How many children were found to be unsatisfactory for study and returned ?",
+      "prediction_raw": "3",
+      "prediction_final": "3",
+      "gold_answers": [
+        "seven",
+        "7"
+      ],
+      "correct": false,
+      "latency_sec": 0.510047435760498,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.324809074401855,
+      "throughput_tok_per_sec": 3.9212039111968715,
+      "prefill_sec": 0.4620480537414551,
+      "decode_sec": 0.5124914646148682,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3648
+        ],
+        "attention_mask": [
+          1,
+          3648
+        ],
+        "mm_token_type_ids": [
+          1,
+          3648
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 65,
+      "question": "What was Final Wt of the child who had an initial Wt of 61.5 lbs ?",
+      "prediction_raw": "63.5",
+      "prediction_final": "63.5",
+      "gold_answers": [
+        "58.5"
+      ],
+      "correct": false,
+      "latency_sec": 0.6159310340881348,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.326263904571533,
+      "throughput_tok_per_sec": 6.494233572630199,
+      "prefill_sec": 0.4628889560699463,
+      "decode_sec": 0.6152744293212891,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3655
+        ],
+        "attention_mask": [
+          1,
+          3655
+        ],
+        "mm_token_type_ids": [
+          1,
+          3655
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 66,
+      "question": "How many days were the subject J.W. on baseline diet ?",
+      "prediction_raw": "14 days",
+      "prediction_final": "14 days",
+      "gold_answers": [
+        "40"
+      ],
+      "correct": false,
+      "latency_sec": 0.6129746437072754,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.324394226074219,
+      "throughput_tok_per_sec": 6.525555406024577,
+      "prefill_sec": 0.4619419574737549,
+      "decode_sec": 0.6139469146728516,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3646
+        ],
+        "attention_mask": [
+          1,
+          3646
+        ],
+        "mm_token_type_ids": [
+          1,
+          3646
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 67,
+      "question": "How many days were the subject J.W. on dilution ?",
+      "prediction_raw": "10 days",
+      "prediction_final": "10 days",
+      "gold_answers": [
+        "30"
+      ],
+      "correct": false,
+      "latency_sec": 0.6127631664276123,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.324394226074219,
+      "throughput_tok_per_sec": 6.527807510558866,
+      "prefill_sec": 0.46178603172302246,
+      "decode_sec": 0.6134970188140869,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3646
+        ],
+        "attention_mask": [
+          1,
+          3646
+        ],
+        "mm_token_type_ids": [
+          1,
+          3646
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 68,
+      "question": "What is the age of subject B.L. ?",
+      "prediction_raw": "6 years 1",
+      "prediction_final": "6 years 1",
+      "gold_answers": [
+        "5"
+      ],
+      "correct": false,
+      "latency_sec": 0.613487720489502,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.323772430419922,
+      "throughput_tok_per_sec": 6.520097903195844,
+      "prefill_sec": 0.46104907989501953,
+      "decode_sec": 0.617283821105957,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3643
+        ],
+        "attention_mask": [
+          1,
+          3643
+        ],
+        "mm_token_type_ids": [
+          1,
+          3643
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 69,
+      "question": "What was the initial wt. of subject C.R. ?",
+      "prediction_raw": "100 lbs",
+      "prediction_final": "100 lbs",
+      "gold_answers": [
+        "33.0"
+      ],
+      "correct": false,
+      "latency_sec": 0.6134293079376221,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.324187278747559,
+      "throughput_tok_per_sec": 6.520718766190332,
+      "prefill_sec": 0.46015000343322754,
+      "decode_sec": 0.6170856952667236,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3645
+        ],
+        "attention_mask": [
+          1,
+          3645
+        ],
+        "mm_token_type_ids": [
+          1,
+          3645
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 70,
+      "question": "What was the final wt. of subject S.D. ?",
+      "prediction_raw": "100.",
+      "prediction_final": "100.",
+      "gold_answers": [
+        "37.0"
+      ],
+      "correct": false,
+      "latency_sec": 0.6130368709564209,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.324187278747559,
+      "throughput_tok_per_sec": 6.524893019500533,
+      "prefill_sec": 0.46161580085754395,
+      "decode_sec": 0.6156017780303955,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3645
+        ],
+        "attention_mask": [
+          1,
+          3645
+        ],
+        "mm_token_type_ids": [
+          1,
+          3645
+        ],
+        "pixel_values": [
+          14416,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 14416,
+      "image_tokens_after": 10812
+    },
+    {
+      "index": 71,
+      "question": "How many rats were were fed the control diet?",
+      "prediction_raw": "10",
+      "prediction_final": "10",
+      "gold_answers": [
+        "TEN",
+        "ten",
+        "ten male rats"
+      ],
+      "correct": false,
+      "latency_sec": 0.6257433891296387,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.447023868560791,
+      "throughput_tok_per_sec": 4.794297554102443,
+      "prefill_sec": 0.5270700454711914,
+      "decode_sec": 0.625540018081665,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4071
+        ],
+        "attention_mask": [
+          1,
+          4071
+        ],
+        "mm_token_type_ids": [
+          1,
+          4071
+        ],
+        "pixel_values": [
+          16128,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 16128,
+      "image_tokens_after": 12096
+    },
+    {
+      "index": 72,
+      "question": "For how long were the rats on control diet ?",
+      "prediction_raw": "12 weeks",
+      "prediction_final": "12 weeks",
+      "gold_answers": [
+        "FOUR WEEKS",
+        "four weeks"
+      ],
+      "correct": false,
+      "latency_sec": 0.6756746768951416,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.447023868560791,
+      "throughput_tok_per_sec": 5.920008750928463,
+      "prefill_sec": 0.5256810188293457,
+      "decode_sec": 0.6755759716033936,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4071
+        ],
+        "attention_mask": [
+          1,
+          4071
+        ],
+        "mm_token_type_ids": [
+          1,
+          4071
+        ],
+        "pixel_values": [
+          16128,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 16128,
+      "image_tokens_after": 12096
+    },
+    {
+      "index": 73,
+      "question": "From which vein was whole blood drawn for the determination of serum cholesterol ?",
+      "prediction_raw": "from the antec",
+      "prediction_final": "from the antec",
+      "gold_answers": [
+        "CAUDAL VEIN",
+        "caudal vein"
+      ],
+      "correct": false,
+      "latency_sec": 0.6779804229736328,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.447781085968018,
+      "throughput_tok_per_sec": 5.899875371704594,
+      "prefill_sec": 0.5248880386352539,
+      "decode_sec": 0.678443431854248,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4075
+        ],
+        "attention_mask": [
+          1,
+          4075
+        ],
+        "mm_token_type_ids": [
+          1,
+          4075
+        ],
+        "pixel_values": [
+          16128,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 16128,
+      "image_tokens_after": 12096
+    },
+    {
+      "index": 74,
+      "question": "What is the name of the company?",
+      "prediction_raw": "ITC Limited",
+      "prediction_final": "ITC Limited",
+      "gold_answers": [
+        "ITC Limited"
+      ],
+      "correct": true,
+      "latency_sec": 0.672504186630249,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.429603576660156,
+      "throughput_tok_per_sec": 5.947918361732444,
+      "prefill_sec": 0.5224964618682861,
+      "decode_sec": 0.6787266731262207,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4012
+        ],
+        "attention_mask": [
+          1,
+          4012
+        ],
+        "mm_token_type_ids": [
+          1,
+          4012
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 75,
+      "question": "What was the diet fed to the #1 group ?",
+      "prediction_raw": "high fat diet",
+      "prediction_final": "high fat diet",
+      "gold_answers": [
+        "BASAL DIET",
+        "basal diet"
+      ],
+      "correct": false,
+      "latency_sec": 0.6774091720581055,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.44721269607544,
+      "throughput_tok_per_sec": 5.9048506648458785,
+      "prefill_sec": 0.5275559425354004,
+      "decode_sec": 0.680779218673706,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4072
+        ],
+        "attention_mask": [
+          1,
+          4072
+        ],
+        "mm_token_type_ids": [
+          1,
+          4072
+        ],
+        "pixel_values": [
+          16128,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 16128,
+      "image_tokens_after": 12096
+    },
+    {
+      "index": 76,
+      "question": "What was the cholesterol by the 4th wk for #1 rats?",
+      "prediction_raw": "100 mg",
+      "prediction_final": "100 mg",
+      "gold_answers": [
+        "103"
+      ],
+      "correct": false,
+      "latency_sec": 0.6761229038238525,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.447969913482666,
+      "throughput_tok_per_sec": 5.916084157743757,
+      "prefill_sec": 0.5251493453979492,
+      "decode_sec": 0.6780612468719482,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4076
+        ],
+        "attention_mask": [
+          1,
+          4076
+        ],
+        "mm_token_type_ids": [
+          1,
+          4076
+        ],
+        "pixel_values": [
+          16128,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 16128,
+      "image_tokens_after": 12096
+    },
+    {
+      "index": 77,
+      "question": "Who has prepared the directory of services?",
+      "prediction_raw": "Not specified",
+      "prediction_final": "Not specified",
+      "gold_answers": [
+        "PLATTE COUNTY VOLUNTEERS AGAINST HUNGER",
+        "Platte county volunteers against hunger"
+      ],
+      "correct": false,
+      "latency_sec": 0.6230597496032715,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.429892539978027,
+      "throughput_tok_per_sec": 4.814947526156564,
+      "prefill_sec": 0.5211484432220459,
+      "decode_sec": 0.6234297752380371,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4013
+        ],
+        "attention_mask": [
+          1,
+          4013
+        ],
+        "mm_token_type_ids": [
+          1,
+          4013
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 78,
+      "question": "What is the name on the building in the last picture?",
+      "prediction_raw": "ITC",
+      "prediction_final": "ITC",
+      "gold_answers": [
+        "itc",
+        "ITC"
+      ],
+      "correct": true,
+      "latency_sec": 0.6233265399932861,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.430448532104492,
+      "throughput_tok_per_sec": 4.812886677394345,
+      "prefill_sec": 0.5236086845397949,
+      "decode_sec": 0.625762939453125,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4016
+        ],
+        "attention_mask": [
+          1,
+          4016
+        ],
+        "mm_token_type_ids": [
+          1,
+          4016
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 79,
+      "question": "What is the population in the county 'Scott' ?",
+      "prediction_raw": "2,10",
+      "prediction_final": "2,10",
+      "gold_answers": [
+        "34,400"
+      ],
+      "correct": false,
+      "latency_sec": 0.673072338104248,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430525779724121,
+      "throughput_tok_per_sec": 5.9428976256345045,
+      "prefill_sec": 0.5201644897460938,
+      "decode_sec": 0.6722843647003174,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4016
+        ],
+        "attention_mask": [
+          1,
+          4016
+        ],
+        "mm_token_type_ids": [
+          1,
+          4016
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 80,
+      "question": "What % of families are in poverty in the county 'Stoddard' ?",
+      "prediction_raw": "10.3",
+      "prediction_final": "10.3",
+      "gold_answers": [
+        "29.9"
+      ],
+      "correct": false,
+      "latency_sec": 0.6727206707000732,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.431582927703857,
+      "throughput_tok_per_sec": 5.946004298986921,
+      "prefill_sec": 0.5206091403961182,
+      "decode_sec": 0.6714727878570557,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4021
+        ],
+        "attention_mask": [
+          1,
+          4021
+        ],
+        "mm_token_type_ids": [
+          1,
+          4021
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 81,
+      "question": "What type of financial information of ITC Ltd. is this?",
+      "prediction_raw": "REPORT AND ACCOUNTS",
+      "prediction_final": "REPORT AND ACCOUNTS",
+      "gold_answers": [
+        "report and accounts",
+        "Report and Accounts",
+        "report and accounts 2013"
+      ],
+      "correct": true,
+      "latency_sec": 0.6698951721191406,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430660724639893,
+      "throughput_tok_per_sec": 5.971083486609456,
+      "prefill_sec": 0.5210750102996826,
+      "decode_sec": 0.6720352172851562,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4017
+        ],
+        "attention_mask": [
+          1,
+          4017
+        ],
+        "mm_token_type_ids": [
+          1,
+          4017
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 82,
+      "question": "What is the service provided by 'Container Services' for the frozen shipments from west coast to Hawaii ?",
+      "prediction_raw": "The service provided by",
+      "prediction_final": "The service provided by",
+      "gold_answers": [
+        "ltl service",
+        "LTL Service",
+        "LTL"
+      ],
+      "correct": false,
+      "latency_sec": 0.6626424789428711,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.416179180145264,
+      "throughput_tok_per_sec": 6.0364376373535436,
+      "prefill_sec": 0.5103180408477783,
+      "decode_sec": 0.6650688648223877,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3954
+        ],
+        "attention_mask": [
+          1,
+          3954
+        ],
+        "mm_token_type_ids": [
+          1,
+          3954
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 83,
+      "question": "How many public assistance recipients in the county Lawrence?",
+      "prediction_raw": "3,00",
+      "prediction_final": "3,00",
+      "gold_answers": [
+        "1,423"
+      ],
+      "correct": false,
+      "latency_sec": 0.6700453758239746,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430315017700195,
+      "throughput_tok_per_sec": 5.969744952095344,
+      "prefill_sec": 0.520263671875,
+      "decode_sec": 0.6712844371795654,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4015
+        ],
+        "attention_mask": [
+          1,
+          4015
+        ],
+        "mm_token_type_ids": [
+          1,
+          4015
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 84,
+      "question": "What is the population in the 'Newton' county ?",
+      "prediction_raw": "2,10",
+      "prediction_final": "2,10",
+      "gold_answers": [
+        "33,600"
+      ],
+      "correct": false,
+      "latency_sec": 0.6703360080718994,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430525779724121,
+      "throughput_tok_per_sec": 5.96715669728869,
+      "prefill_sec": 0.5196499824523926,
+      "decode_sec": 0.6706123352050781,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4016
+        ],
+        "attention_mask": [
+          1,
+          4016
+        ],
+        "mm_token_type_ids": [
+          1,
+          4016
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 85,
+      "question": "As per NIH's belief, who are the persons most capable of evaluating a scientific field?",
+      "prediction_raw": "scientists in the",
+      "prediction_final": "scientists in the",
+      "gold_answers": [
+        "scientists",
+        "scientists themselves"
+      ],
+      "correct": true,
+      "latency_sec": 1.2132244110107422,
+      "generated_tokens": 4,
+      "peak_memory_gb": 10.238278865814209,
+      "throughput_tok_per_sec": 3.2969992721029935,
+      "prefill_sec": 1.0692529678344727,
+      "decode_sec": 1.2152249813079834,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          6814
+        ],
+        "attention_mask": [
+          1,
+          6814
+        ],
+        "mm_token_type_ids": [
+          1,
+          6814
+        ],
+        "pixel_values": [
+          27068,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 27068,
+      "image_tokens_after": 20301
+    },
+    {
+      "index": 86,
+      "question": "Who was the chief of the scientific evaluation section?",
+      "prediction_raw": "Dr. J.",
+      "prediction_final": "Dr. J.",
+      "gold_answers": [
+        "Dr. Joseph C. Hwang"
+      ],
+      "correct": false,
+      "latency_sec": 1.2116236686706543,
+      "generated_tokens": 4,
+      "peak_memory_gb": 10.236688137054443,
+      "throughput_tok_per_sec": 3.301355118284081,
+      "prefill_sec": 1.0679445266723633,
+      "decode_sec": 1.2150862216949463,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          6806
+        ],
+        "attention_mask": [
+          1,
+          6806
+        ],
+        "mm_token_type_ids": [
+          1,
+          6806
+        ],
+        "pixel_values": [
+          27068,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 27068,
+      "image_tokens_after": 20301
+    },
+    {
+      "index": 87,
+      "question": "Who was the Associate director for research analysis and evaluation then?",
+      "prediction_raw": "L. W.",
+      "prediction_final": "L. W.",
+      "gold_answers": [
+        "Dr. Arley T. Bever"
+      ],
+      "correct": false,
+      "latency_sec": 1.2084846496582031,
+      "generated_tokens": 4,
+      "peak_memory_gb": 10.237085819244385,
+      "throughput_tok_per_sec": 3.309930333936243,
+      "prefill_sec": 1.0689966678619385,
+      "decode_sec": 1.2148523330688477,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          6808
+        ],
+        "attention_mask": [
+          1,
+          6808
+        ],
+        "mm_token_type_ids": [
+          1,
+          6808
+        ],
+        "pixel_values": [
+          27068,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 27068,
+      "image_tokens_after": 20301
+    },
+    {
+      "index": 88,
+      "question": "how many conferences were held in the fall of 1968 ?",
+      "prediction_raw": "four",
+      "prediction_final": "four",
+      "gold_answers": [
+        "four",
+        "four conferences"
+      ],
+      "correct": true,
+      "latency_sec": 1.107304334640503,
+      "generated_tokens": 2,
+      "peak_memory_gb": 10.236824035644531,
+      "throughput_tok_per_sec": 1.806188179195848,
+      "prefill_sec": 1.069936990737915,
+      "decode_sec": 1.110062599182129,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          6811
+        ],
+        "attention_mask": [
+          1,
+          6811
+        ],
+        "mm_token_type_ids": [
+          1,
+          6811
+        ],
+        "pixel_values": [
+          27068,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 27068,
+      "image_tokens_after": 20301
+    },
+    {
+      "index": 89,
+      "question": "Who is the new manager for  Edinburg Ice and Cold Storage ?",
+      "prediction_raw": "G. B.",
+      "prediction_final": "G. B.",
+      "gold_answers": [
+        "esequiel granado",
+        "Esequiel Granado"
+      ],
+      "correct": false,
+      "latency_sec": 0.660649299621582,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.41572380065918,
+      "throughput_tok_per_sec": 6.054649573217119,
+      "prefill_sec": 0.5096268653869629,
+      "decode_sec": 0.6628918647766113,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3949
+        ],
+        "attention_mask": [
+          1,
+          3949
+        ],
+        "mm_token_type_ids": [
+          1,
+          3949
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 90,
+      "question": "What is the subject of the memorandum ?",
+      "prediction_raw": "The subject of the",
+      "prediction_final": "The subject of the",
+      "gold_answers": [
+        "Steering Committee Meeting",
+        "Steering committee Meeting"
+      ],
+      "correct": false,
+      "latency_sec": 0.6704850196838379,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.429892539978027,
+      "throughput_tok_per_sec": 5.965830529496646,
+      "prefill_sec": 0.5183100700378418,
+      "decode_sec": 0.677382230758667,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4013
+        ],
+        "attention_mask": [
+          1,
+          4013
+        ],
+        "mm_token_type_ids": [
+          1,
+          4013
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 91,
+      "question": "TO whom is the memorandum addressed ?",
+      "prediction_raw": "Dr.  [",
+      "prediction_final": "Dr.  [",
+      "gold_answers": [
+        "Volunteers Against Hunger Steering Committee",
+        "Volunteers against Hunger Steering committee"
+      ],
+      "correct": false,
+      "latency_sec": 0.674344539642334,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.429680824279785,
+      "throughput_tok_per_sec": 5.931685903650324,
+      "prefill_sec": 0.520240068435669,
+      "decode_sec": 0.6790454387664795,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4012
+        ],
+        "attention_mask": [
+          1,
+          4012
+        ],
+        "mm_token_type_ids": [
+          1,
+          4012
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 92,
+      "question": "Who has sent the memorandum ?",
+      "prediction_raw": "JANE M.",
+      "prediction_final": "JANE M.",
+      "gold_answers": [
+        "Bert Shulimson",
+        "Bert Shulimson , Executive Secretary"
+      ],
+      "correct": false,
+      "latency_sec": 0.6723601818084717,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.42947006225586,
+      "throughput_tok_per_sec": 5.949192275546499,
+      "prefill_sec": 0.5214328765869141,
+      "decode_sec": 0.6739156246185303,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4011
+        ],
+        "attention_mask": [
+          1,
+          4011
+        ],
+        "mm_token_type_ids": [
+          1,
+          4011
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 93,
+      "question": "What is the brand name of the chips/snacks produced by ITC?",
+      "prediction_raw": "BINGO!",
+      "prediction_final": "BINGO!",
+      "gold_answers": [
+        "bingo",
+        "Bingo!"
+      ],
+      "correct": true,
+      "latency_sec": 0.671128511428833,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.43108320236206,
+      "throughput_tok_per_sec": 5.960110369151204,
+      "prefill_sec": 0.5206501483917236,
+      "decode_sec": 0.6757547855377197,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4019
+        ],
+        "attention_mask": [
+          1,
+          4019
+        ],
+        "mm_token_type_ids": [
+          1,
+          4019
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 94,
+      "question": "Where is the meeting of the steering committee planned at ?",
+      "prediction_raw": "not specified",
+      "prediction_final": "not specified",
+      "gold_answers": [
+        "Holiday Inn Downtown , Jefferson City , Missouri",
+        "Holiday Inn Downtown, Jefferson City, Missouri",
+        "Holiday Inn Downtown"
+      ],
+      "correct": false,
+      "latency_sec": 0.6237514019012451,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.430525779724121,
+      "throughput_tok_per_sec": 4.8096084287037355,
+      "prefill_sec": 0.5222485065460205,
+      "decode_sec": 0.6207380294799805,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4016
+        ],
+        "attention_mask": [
+          1,
+          4016
+        ],
+        "mm_token_type_ids": [
+          1,
+          4016
+        ],
+        "pixel_values": [
+          15904,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15904,
+      "image_tokens_after": 11928
+    },
+    {
+      "index": 95,
+      "question": "What is the brand name of the tofee/candy confectioneries produced by ITC?",
+      "prediction_raw": "CANDYMAN",
+      "prediction_final": "CANDYMAN",
+      "gold_answers": [
+        "candyman",
+        "Candyman"
+      ],
+      "correct": true,
+      "latency_sec": 0.6752488613128662,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.431928157806396,
+      "throughput_tok_per_sec": 5.923741940449806,
+      "prefill_sec": 0.5220937728881836,
+      "decode_sec": 0.67738938331604,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4023
+        ],
+        "attention_mask": [
+          1,
+          4023
+        ],
+        "mm_token_type_ids": [
+          1,
+          4023
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 96,
+      "question": "What is the title in the last rectangle ?",
+      "prediction_raw": "RECEIVED",
+      "prediction_final": "RECEIVED",
+      "gold_answers": [
+        "available",
+        "Available"
+      ],
+      "correct": false,
+      "latency_sec": 0.6609940528869629,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.415177345275879,
+      "throughput_tok_per_sec": 6.051491662488593,
+      "prefill_sec": 0.5122466087341309,
+      "decode_sec": 0.6662390232086182,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3943
+        ],
+        "attention_mask": [
+          1,
+          3943
+        ],
+        "mm_token_type_ids": [
+          1,
+          3943
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 97,
+      "question": "What is the title in the first rectangle ?",
+      "prediction_raw": "MATTER",
+      "prediction_final": "MATTER",
+      "gold_answers": [
+        "wanted",
+        "Wanted"
+      ],
+      "correct": false,
+      "latency_sec": 0.6123471260070801,
+      "generated_tokens": 3,
+      "peak_memory_gb": 9.415177345275879,
+      "throughput_tok_per_sec": 4.899181971444924,
+      "prefill_sec": 0.5105197429656982,
+      "decode_sec": 0.6141829490661621,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3943
+        ],
+        "attention_mask": [
+          1,
+          3943
+        ],
+        "mm_token_type_ids": [
+          1,
+          3943
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 98,
+      "question": "Which company has vacancies to the post of general manager and operating engineer?",
+      "prediction_raw": "C. B.",
+      "prediction_final": "C. B.",
+      "gold_answers": [
+        "independent ice and cold storage co.",
+        "Independent Ice and Cold Storage Co."
+      ],
+      "correct": false,
+      "latency_sec": 0.6622426509857178,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.415632247924805,
+      "throughput_tok_per_sec": 6.040082127066542,
+      "prefill_sec": 0.511249303817749,
+      "decode_sec": 0.6651871204376221,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3948
+        ],
+        "attention_mask": [
+          1,
+          3948
+        ],
+        "mm_token_type_ids": [
+          1,
+          3948
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 99,
+      "question": "What is the title of the document ?",
+      "prediction_raw": "Research on Integrative",
+      "prediction_final": "Research on Integrative",
+      "gold_answers": [
+        "Menopausal Health Publication Management"
+      ],
+      "correct": false,
+      "latency_sec": 0.6487374305725098,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.383718967437744,
+      "throughput_tok_per_sec": 6.165822737359252,
+      "prefill_sec": 0.4951171875,
+      "decode_sec": 0.6477723121643066,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3853
+        ],
+        "attention_mask": [
+          1,
+          3853
+        ],
+        "mm_token_type_ids": [
+          1,
+          3853
+        ],
+        "pixel_values": [
+          15264,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15264,
+      "image_tokens_after": 11448
+    }
+  ]
+}

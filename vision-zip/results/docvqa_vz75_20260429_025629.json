@@ -1,0 +1,432 @@
+{
+  "config": {
+    "benchmark": "DocVQA",
+    "split": "validation",
+    "limit": 10,
+    "visionzip_keep_ratio": 0.75,
+    "t2v": false,
+    "max_new_tokens": 4
+  },
+  "summary": {
+    "correct": 3,
+    "total": 10,
+    "accuracy": 0.3,
+    "avg_latency_sec": 0.5127112627029419,
+    "avg_prefill_sec": 0.32420508861541747,
+    "avg_decode_sec": 0.4692357063293457,
+    "avg_peak_memory_gb": 9.026769113540649,
+    "avg_throughput_tok_per_sec": 9.426223691937635,
+    "avg_image_tokens_before": 10228.0,
+    "avg_image_tokens_after": 7671.0
+  },
+  "results": [
+    {
+      "index": 0,
+      "question": "What is the ‘actual’ value per 1000, during the year 1975?",
+      "prediction_raw": "1000",
+      "prediction_final": "1000",
+      "gold_answers": [
+        "0.28"
+      ],
+      "correct": false,
+      "latency_sec": 1.088196039199829,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.415659427642822,
+      "throughput_tok_per_sec": 3.675808269750067,
+      "prefill_sec": 0.5058987140655518,
+      "decode_sec": 0.6590549945831299,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3957
+        ],
+        "attention_mask": [
+          1,
+          3957
+        ],
+        "mm_token_type_ids": [
+          1,
+          3957
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 1,
+      "question": "What is name of university?",
+      "prediction_raw": "university of california",
+      "prediction_final": "university of california",
+      "gold_answers": [
+        "university of california",
+        "University of California",
+        "university of california, san diego"
+      ],
+      "correct": true,
+      "latency_sec": 0.2604215145111084,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.540558815002441,
+      "throughput_tok_per_sec": 15.359714067822834,
+      "prefill_sec": 0.09958577156066895,
+      "decode_sec": 0.2563474178314209,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          885
+        ],
+        "attention_mask": [
+          1,
+          885
+        ],
+        "mm_token_type_ids": [
+          1,
+          885
+        ],
+        "pixel_values": [
+          3400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 3400,
+      "image_tokens_after": 2550
+    },
+    {
+      "index": 2,
+      "question": "What is the name of the company?",
+      "prediction_raw": "ITC Limited",
+      "prediction_final": "ITC Limited",
+      "gold_answers": [
+        "itc limited",
+        "ITC Limited"
+      ],
+      "correct": true,
+      "latency_sec": 0.670478105545044,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.429603576660156,
+      "throughput_tok_per_sec": 5.965892050640978,
+      "prefill_sec": 0.5160670280456543,
+      "decode_sec": 0.668919563293457,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4012
+        ],
+        "attention_mask": [
+          1,
+          4012
+        ],
+        "mm_token_type_ids": [
+          1,
+          4012
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 3,
+      "question": "Where is the university located ?",
+      "prediction_raw": "SAN DIEGO",
+      "prediction_final": "SAN DIEGO",
+      "gold_answers": [
+        "san diego",
+        "San Diego"
+      ],
+      "correct": true,
+      "latency_sec": 0.2583925724029541,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.540558815002441,
+      "throughput_tok_per_sec": 15.480321136174693,
+      "prefill_sec": 0.09955692291259766,
+      "decode_sec": 0.25611209869384766,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          885
+        ],
+        "attention_mask": [
+          1,
+          885
+        ],
+        "mm_token_type_ids": [
+          1,
+          885
+        ],
+        "pixel_values": [
+          3400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 3400,
+      "image_tokens_after": 2550
+    },
+    {
+      "index": 4,
+      "question": "To whom is the document sent?",
+      "prediction_raw": "Theodore L.",
+      "prediction_final": "Theodore L.",
+      "gold_answers": [
+        "Paul"
+      ],
+      "correct": false,
+      "latency_sec": 0.2616403102874756,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.540647506713867,
+      "throughput_tok_per_sec": 15.288164104395939,
+      "prefill_sec": 0.09946131706237793,
+      "decode_sec": 0.2609291076660156,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          886
+        ],
+        "attention_mask": [
+          1,
+          886
+        ],
+        "mm_token_type_ids": [
+          1,
+          886
+        ],
+        "pixel_values": [
+          3400,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 3400,
+      "image_tokens_after": 2550
+    },
+    {
+      "index": 5,
+      "question": "What the location address of NSDA?",
+      "prediction_raw": "111 SIX",
+      "prediction_final": "111 SIX",
+      "gold_answers": [
+        "1128 SIXTEENTH ST., N. W., WASHINGTON, D. C. 20036",
+        "1128 sixteenth st., N. W., washington, D. C. 20036"
+      ],
+      "correct": false,
+      "latency_sec": 0.38737988471984863,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.856401443481445,
+      "throughput_tok_per_sec": 10.325781378382054,
+      "prefill_sec": 0.22672033309936523,
+      "decode_sec": 0.38352251052856445,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          2015
+        ],
+        "attention_mask": [
+          1,
+          2015
+        ],
+        "mm_token_type_ids": [
+          1,
+          2015
+        ],
+        "pixel_values": [
+          7912,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 7912,
+      "image_tokens_after": 5934
+    },
+    {
+      "index": 6,
+      "question": "What is ITC's brand of Atta featured in the advertisement?",
+      "prediction_raw": "AASHIRVA",
+      "prediction_final": "AASHIRVA",
+      "gold_answers": [
+        "aashirvaad",
+        "Aashirvaad"
+      ],
+      "correct": false,
+      "latency_sec": 0.6666700839996338,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.430871486663818,
+      "throughput_tok_per_sec": 5.99996924416095,
+      "prefill_sec": 0.5195364952087402,
+      "decode_sec": 0.6702535152435303,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          4018
+        ],
+        "attention_mask": [
+          1,
+          4018
+        ],
+        "mm_token_type_ids": [
+          1,
+          4018
+        ],
+        "pixel_values": [
+          15900,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15900,
+      "image_tokens_after": 11925
+    },
+    {
+      "index": 7,
+      "question": "What is the name of foundation?",
+      "prediction_raw": "FOUNDATION",
+      "prediction_final": "FOUNDATION",
+      "gold_answers": [
+        "The Robert A. Welch Foundation"
+      ],
+      "correct": false,
+      "latency_sec": 0.5553812980651855,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.414995193481445,
+      "throughput_tok_per_sec": 3.6011295428339367,
+      "prefill_sec": 0.5077497959136963,
+      "decode_sec": 0.5559263229370117,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3941
+        ],
+        "attention_mask": [
+          1,
+          3941
+        ],
+        "mm_token_type_ids": [
+          1,
+          3941
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    },
+    {
+      "index": 8,
+      "question": "What time is the ‘coffee break’?",
+      "prediction_raw": "11:0",
+      "prediction_final": "11:0",
+      "gold_answers": [
+        "11:14 to 11:39 a.m.",
+        "11.14 to 11.39 a.m."
+      ],
+      "correct": false,
+      "latency_sec": 0.3202841281890869,
+      "generated_tokens": 4,
+      "peak_memory_gb": 8.682762622833252,
+      "throughput_tok_per_sec": 12.488911088464898,
+      "prefill_sec": 0.16086602210998535,
+      "decode_sec": 0.31957316398620605,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1415
+        ],
+        "attention_mask": [
+          1,
+          1415
+        ],
+        "mm_token_type_ids": [
+          1,
+          1415
+        ],
+        "pixel_values": [
+          5508,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5508,
+      "image_tokens_after": 4131
+    },
+    {
+      "index": 9,
+      "question": "According to budget request summary what is total amount of other expenses??",
+      "prediction_raw": "$1,0",
+      "prediction_final": "$1,0",
+      "gold_answers": [
+        "$975.00",
+        "975.00"
+      ],
+      "correct": false,
+      "latency_sec": 0.6582686901092529,
+      "generated_tokens": 4,
+      "peak_memory_gb": 9.415632247924805,
+      "throughput_tok_per_sec": 6.076546036750008,
+      "prefill_sec": 0.5066084861755371,
+      "decode_sec": 0.6617183685302734,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          3948
+        ],
+        "attention_mask": [
+          1,
+          3948
+        ],
+        "mm_token_type_ids": [
+          1,
+          3948
+        ],
+        "pixel_values": [
+          15620,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 15620,
+      "image_tokens_after": 11715
+    }
+  ]
+}

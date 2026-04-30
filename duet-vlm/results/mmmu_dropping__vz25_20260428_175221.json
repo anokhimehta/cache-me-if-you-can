@@ -1,0 +1,828 @@
+{
+  "config": {
+    "visionzip_keep_ratio": 0.25,
+    "max_new_tokens": 16,
+    "split": "validation",
+    "limit": 10
+  },
+  "summary": {
+    "correct": 3,
+    "total": 20,
+    "accuracy": 0.15,
+    "avg_prefill_sec": 0.13606042861938478,
+    "avg_decode_sec": 0.31049327850341796,
+    "avg_peak_memory_gb": 8.931862711906433,
+    "avg_throughput_tok_per_sec": 8.40419463326442,
+    "avg_image_tokens_before": 1264.8,
+    "avg_image_tokens_after": null,
+    "avg_latency_sec": 0.31049327850341796
+  },
+  "per_subject_summary": {
+    "Accounting": {
+      "correct": 2,
+      "total": 10,
+      "accuracy": 0.2,
+      "avg_latency_sec": 0.25308966636657715,
+      "avg_prefill_sec": 0.09382834434509277,
+      "avg_decode_sec": 0.25308966636657715,
+      "avg_peak_memory_gb": 8.38969645500183,
+      "avg_throughput_tok_per_sec": 9.305985442699226,
+      "avg_image_tokens_before": 679.6,
+      "avg_image_tokens_after": null
+    },
+    "Biology": {
+      "correct": 1,
+      "total": 10,
+      "accuracy": 0.1,
+      "avg_latency_sec": 0.36789689064025877,
+      "avg_prefill_sec": 0.17829251289367676,
+      "avg_decode_sec": 0.36789689064025877,
+      "avg_peak_memory_gb": 9.474028968811036,
+      "avg_throughput_tok_per_sec": 7.5024038238296145,
+      "avg_image_tokens_before": 1850.0,
+      "avg_image_tokens_after": null
+    }
+  },
+  "results": [
+    {
+      "subject": "Accounting",
+      "index": 0,
+      "question": "<image 1> Baxter Company has a relevant range of production between 15,000 and 30,000 units. The following cost data represents average variable costs per unit for 25,000 units of production. If 30,000 units are produced, what are the per unit manufacturing overhead costs incurred?",
+      "prediction_raw": "D",
+      "prediction_final": "D",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.7356414794921875,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.358446598052979,
+      "throughput_tok_per_sec": 2.7187156458069737,
+      "prefill_sec": 0.09305810928344727,
+      "decode_sec": 0.7356414794921875,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          340
+        ],
+        "attention_mask": [
+          1,
+          340
+        ],
+        "mm_token_type_ids": [
+          1,
+          340
+        ],
+        "pixel_values": [
+          644,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 644,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 1,
+      "question": "Assume accounts have normal balances, solve for the one missing account balance: Dividends. Equipment was recently purchased, so there is neither depreciation expense nor accumulated depreciation. <image 1>",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "C",
+      "correct": true,
+      "latency_sec": 0.2056441307067871,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.31849193572998,
+      "throughput_tok_per_sec": 9.725538935276754,
+      "prefill_sec": 0.09312844276428223,
+      "decode_sec": 0.2056441307067871,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          344
+        ],
+        "attention_mask": [
+          1,
+          344
+        ],
+        "mm_token_type_ids": [
+          1,
+          344
+        ],
+        "pixel_values": [
+          440,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 440,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 2,
+      "question": "Maxwell Software, Inc., has the following mutually exclusive projects.Suppose the company uses the NPV rule to rank these two projects.<image 1> Which project should be chosen if the appropriate discount rate is 15 percent?",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.19373345375061035,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.300391674041748,
+      "throughput_tok_per_sec": 10.323462268806525,
+      "prefill_sec": 0.09070324897766113,
+      "decode_sec": 0.19373345375061035,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          236
+        ],
+        "attention_mask": [
+          1,
+          236
+        ],
+        "mm_token_type_ids": [
+          1,
+          236
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 3,
+      "question": "Each situation below relates to an independent company's Owners' Equity. <image 1> Calculate the missing values of company 2.",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "D",
+      "correct": false,
+      "latency_sec": 0.19739818572998047,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.479344367980957,
+      "throughput_tok_per_sec": 10.131805379081777,
+      "prefill_sec": 0.09239435195922852,
+      "decode_sec": 0.19739818572998047,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          456
+        ],
+        "attention_mask": [
+          1,
+          456
+        ],
+        "mm_token_type_ids": [
+          1,
+          456
+        ],
+        "pixel_values": [
+          1064,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1064,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 4,
+      "question": "The following data show the units in beginning work in process inventory, the number of units started, the number of units transferred, and the percent completion of the ending work in process for conversion. Given that materials are added at the beginning of the process, what are the equivalent units for conversion costs for each quarter using the weighted-average method? Assume that the quarters are independent.<image 1>",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.19821929931640625,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.479352474212646,
+      "throughput_tok_per_sec": 10.089834879334898,
+      "prefill_sec": 0.09442257881164551,
+      "decode_sec": 0.19821929931640625,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          543
+        ],
+        "attention_mask": [
+          1,
+          543
+        ],
+        "mm_token_type_ids": [
+          1,
+          543
+        ],
+        "pixel_values": [
+          1064,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1064,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 5,
+      "question": "Job cost sheets show the following information: <image 1> What are the balances in the work in process inventory, finished goods inventory, and cost of goods sold for January?",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "A",
+      "correct": true,
+      "latency_sec": 0.21634745597839355,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.597214698791504,
+      "throughput_tok_per_sec": 9.24438880482948,
+      "prefill_sec": 0.10374021530151367,
+      "decode_sec": 0.21634745597839355,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          741
+        ],
+        "attention_mask": [
+          1,
+          741
+        ],
+        "mm_token_type_ids": [
+          1,
+          741
+        ],
+        "pixel_values": [
+          1368,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1368,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 6,
+      "question": "You are a consultant to a large manufacturing orporation that is considering a project with thefollowing net after-tax cash flows (in millions of dollars ): <image 1> The project's beta is 1.8. Assuming that rf = 8% and E(rM) = 16%, what is the highest possible beta estimate for the project before its NPV becomes negative?",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.19350552558898926,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.306456089019775,
+      "throughput_tok_per_sec": 10.335622168475187,
+      "prefill_sec": 0.09096050262451172,
+      "decode_sec": 0.19350552558898926,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          273
+        ],
+        "attention_mask": [
+          1,
+          273
+        ],
+        "mm_token_type_ids": [
+          1,
+          273
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 7,
+      "question": "Tim-Buck-II rents jet skis at a beach resort. There are three models available to rent: Junior, Adult, and Expert. The rental price and variable costs for these three models are as follows: <image 1> The current product mix is 5:4:1. The three models share total fixed costs of $114,750. Calculate the sales price per composite unit.",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "A",
+      "correct": false,
+      "latency_sec": 0.1987595558166504,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.387532711029053,
+      "throughput_tok_per_sec": 10.062409285342431,
+      "prefill_sec": 0.09408879280090332,
+      "decode_sec": 0.1987595558166504,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          415
+        ],
+        "attention_mask": [
+          1,
+          415
+        ],
+        "mm_token_type_ids": [
+          1,
+          415
+        ],
+        "pixel_values": [
+          768,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 768,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 8,
+      "question": "Forest Company had the following transactions during the month of December. What is the December 31 cash balance? <image 1>",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "C",
+      "correct": false,
+      "latency_sec": 0.19411826133728027,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.305527210235596,
+      "throughput_tok_per_sec": 10.302997699556984,
+      "prefill_sec": 0.09172201156616211,
+      "decode_sec": 0.19411826133728027,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          264
+        ],
+        "attention_mask": [
+          1,
+          264
+        ],
+        "mm_token_type_ids": [
+          1,
+          264
+        ],
+        "pixel_values": [
+          264,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 264,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Accounting",
+      "index": 9,
+      "question": "Use the following cash flow data for Rocket Transport to find Rocket's (1)net cash provided by or used in investing activities (2)Net increase or decrease in cash for the year. <image 1>",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "A",
+      "correct": false,
+      "latency_sec": 0.19752931594848633,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.364206790924072,
+      "throughput_tok_per_sec": 10.125079360481257,
+      "prefill_sec": 0.09406518936157227,
+      "decode_sec": 0.19752931594848633,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          524
+        ],
+        "attention_mask": [
+          1,
+          524
+        ],
+        "mm_token_type_ids": [
+          1,
+          524
+        ],
+        "pixel_values": [
+          576,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 576,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 0,
+      "question": "In the Section of left leg, identify the 170 structure. <image 1>",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "D",
+      "correct": false,
+      "latency_sec": 0.5592472553253174,
+      "generated_tokens": 2,
+      "peak_memory_gb": 11.000072002410889,
+      "throughput_tok_per_sec": 3.5762357006769543,
+      "prefill_sec": 0.2737996578216553,
+      "decode_sec": 0.5592472553253174,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1435
+        ],
+        "attention_mask": [
+          1,
+          1435
+        ],
+        "mm_token_type_ids": [
+          1,
+          1435
+        ],
+        "pixel_values": [
+          4176,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 4176,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 1,
+      "question": "Using the scale bar, estimate the diameter of the vacuole in <image 1>.",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "D",
+      "correct": false,
+      "latency_sec": 0.1968700885772705,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.36363410949707,
+      "throughput_tok_per_sec": 10.158983593970449,
+      "prefill_sec": 0.09305334091186523,
+      "decode_sec": 0.1968700885772705,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          347
+        ],
+        "attention_mask": [
+          1,
+          347
+        ],
+        "mm_token_type_ids": [
+          1,
+          347
+        ],
+        "pixel_values": [
+          672,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 672,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 2,
+      "question": "<image 1> If the pH outside the cell decreases, would you expect the amount of amino acids transported into the cell to increase or decrease?",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "A",
+      "correct": true,
+      "latency_sec": 0.2257823944091797,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.662521839141846,
+      "throughput_tok_per_sec": 8.858086589229144,
+      "prefill_sec": 0.10751104354858398,
+      "decode_sec": 0.2257823944091797,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          520
+        ],
+        "attention_mask": [
+          1,
+          520
+        ],
+        "mm_token_type_ids": [
+          1,
+          520
+        ],
+        "pixel_values": [
+          1512,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1512,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 3,
+      "question": "Name the most likely mode of inheritance in the following pedigree: <image 1>",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.1973438262939453,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.385281085968018,
+      "throughput_tok_per_sec": 10.134596240274488,
+      "prefill_sec": 0.09453153610229492,
+      "decode_sec": 0.1973438262939453,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          542
+        ],
+        "attention_mask": [
+          1,
+          542
+        ],
+        "mm_token_type_ids": [
+          1,
+          542
+        ],
+        "pixel_values": [
+          320,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 320,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 4,
+      "question": "What is part B in the figure? <image 1>",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.1983966827392578,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.443180084228516,
+      "throughput_tok_per_sec": 10.080813713143044,
+      "prefill_sec": 0.09406447410583496,
+      "decode_sec": 0.1983966827392578,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          458
+        ],
+        "attention_mask": [
+          1,
+          458
+        ],
+        "mm_token_type_ids": [
+          1,
+          458
+        ],
+        "pixel_values": [
+          960,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 960,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 5,
+      "question": "In the phylogenetic tree shown, which organism is the most recent common ancestor of organisms 1 and 3? <image 1>",
+      "prediction_raw": "L",
+      "prediction_final": "L",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 0.19452357292175293,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.318840503692627,
+      "throughput_tok_per_sec": 10.28153025342846,
+      "prefill_sec": 0.09314537048339844,
+      "decode_sec": 0.19452357292175293,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          324
+        ],
+        "attention_mask": [
+          1,
+          324
+        ],
+        "mm_token_type_ids": [
+          1,
+          324
+        ],
+        "pixel_values": [
+          288,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 288,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 6,
+      "question": "Which arrow in <image 1> points to a large ribosomal unit?",
+      "prediction_raw": "C",
+      "prediction_final": "C",
+      "gold": "I",
+      "correct": false,
+      "latency_sec": 0.31121301651000977,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.265663623809814,
+      "throughput_tok_per_sec": 6.426466419779947,
+      "prefill_sec": 0.15022754669189453,
+      "decode_sec": 0.31121301651000977,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          799
+        ],
+        "attention_mask": [
+          1,
+          799
+        ],
+        "mm_token_type_ids": [
+          1,
+          799
+        ],
+        "pixel_values": [
+          2480,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 2480,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 7,
+      "question": "Reto Zach studied the whelk-eating behavior of the Northwestern crow. Below are two flight paths that the crow could assume when eating whelks: <image 1>. Select the flight path that would be used most often and the response that best supports your answer.",
+      "prediction_raw": "B",
+      "prediction_final": "B",
+      "gold": "A",
+      "correct": false,
+      "latency_sec": 0.6027932167053223,
+      "generated_tokens": 2,
+      "peak_memory_gb": 9.465933799743652,
+      "throughput_tok_per_sec": 3.317887369289538,
+      "prefill_sec": 0.28618288040161133,
+      "decode_sec": 0.6027932167053223,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          2014
+        ],
+        "attention_mask": [
+          1,
+          2014
+        ],
+        "mm_token_type_ids": [
+          1,
+          2014
+        ],
+        "pixel_values": [
+          1428,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 1428,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 8,
+      "question": "You discover a transmembrane protein ALPHA that, like most transmembrane proteins, exhibits a transmembrane domain composed of alpha helices. You next discover that ALPHA serves as a channel. What is a likely amino acid sequence for some portion of the transmembrane domain?  (See <image 1> for one-letter abbreviations)",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "E",
+      "correct": false,
+      "latency_sec": 0.9963769912719727,
+      "generated_tokens": 2,
+      "peak_memory_gb": 14.539581298828125,
+      "throughput_tok_per_sec": 2.0072723652990065,
+      "prefill_sec": 0.4985237121582031,
+      "decode_sec": 0.9963769912719727,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          2004
+        ],
+        "attention_mask": [
+          1,
+          2004
+        ],
+        "mm_token_type_ids": [
+          1,
+          2004
+        ],
+        "pixel_values": [
+          6384,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 6384,
+      "image_tokens_after": null
+    },
+    {
+      "subject": "Biology",
+      "index": 9,
+      "question": "If individual #1 in the following pedigree <image 1> is a heterozygote for a rare, AR disease, what is the probability that individual #7 will be affected by the disease? Assume that #2 and the spouses of #3 and #4 are not carriers.",
+      "prediction_raw": "A",
+      "prediction_final": "A",
+      "gold": "1/64",
+      "correct": false,
+      "latency_sec": 0.19642186164855957,
+      "generated_tokens": 2,
+      "peak_memory_gb": 8.295581340789795,
+      "throughput_tok_per_sec": 10.182165993205098,
+      "prefill_sec": 0.09188556671142578,
+      "decode_sec": 0.19642186164855957,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          158
+        ],
+        "attention_mask": [
+          1,
+          158
+        ],
+        "mm_token_type_ids": [
+          1,
+          158
+        ],
+        "pixel_values": [
+          280,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 280,
+      "image_tokens_after": null
+    }
+  ]
+}

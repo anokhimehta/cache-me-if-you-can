@@ -1,0 +1,407 @@
+{
+  "config": {
+    "visionzip_keep_ratio": 0.75,
+    "max_new_tokens": 16,
+    "split": "test",
+    "limit": 10,
+    "t2v": true,
+    "t2v_keep_ratios": {
+      "14": 0.5,
+      "21": 0.25
+    }
+  },
+  "summary": {
+    "correct": 2,
+    "total": 10,
+    "accuracy": 0.2,
+    "avg_prefill_sec": 0.3850798368453979,
+    "avg_decode_sec": 5.477090907096863,
+    "avg_peak_memory_gb": 12.101255130767822,
+    "avg_throughput_tok_per_sec": 3.092347631709556,
+    "avg_image_tokens_before": 4761.2,
+    "avg_image_tokens_after": null,
+    "avg_latency_sec": 5.477090907096863
+  },
+  "results": [
+    {
+      "index": 0,
+      "question": "Which of the 3 objects is the smallest?\nA. The object on the right is the smallest object.\nB. The object on the left is the smallest object.\nC. The object in the middle is the smallest object.\nPlease answer directly with only the letter of the correct option and nothing else.",
+      "prediction_raw": "Answer with only the final\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "prediction_final": "Answer with only the final\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "gold": "C",
+      "correct": false,
+      "latency_sec": 2.814724922180176,
+      "generated_tokens": 16,
+      "peak_memory_gb": 8.98189115524292,
+      "throughput_tok_per_sec": 5.684392060452936,
+      "prefill_sec": 0.1334986686706543,
+      "decode_sec": 2.814724922180176,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          603
+        ],
+        "attention_mask": [
+          1,
+          603
+        ],
+        "mm_token_type_ids": [
+          1,
+          603
+        ],
+        "pixel_values": [
+          2080,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 2080,
+      "image_tokens_after": null
+    },
+    {
+      "index": 1,
+      "question": "Is the closest red car to us closer than the closest semi truck?\nPlease answer directly with a single word or number.",
+      "prediction_raw": "1111111111111111",
+      "prediction_final": "1111111111111111",
+      "gold": "Yes",
+      "correct": false,
+      "latency_sec": 6.972072124481201,
+      "generated_tokens": 16,
+      "peak_memory_gb": 12.492764472961426,
+      "throughput_tok_per_sec": 2.294870121010198,
+      "prefill_sec": 0.42087793350219727,
+      "decode_sec": 6.972072124481201,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1351
+        ],
+        "attention_mask": [
+          1,
+          1351
+        ],
+        "mm_token_type_ids": [
+          1,
+          1351
+        ],
+        "pixel_values": [
+          5220,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5220,
+      "image_tokens_after": null
+    },
+    {
+      "index": 2,
+      "question": "Can the car directly ahead of us drive straight through the intersection?\nA. Yes\nB. No\nPlease answer directly with only the letter of the correct option and nothing else.",
+      "prediction_raw": "B\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "prediction_final": "B\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "gold": "B",
+      "correct": true,
+      "latency_sec": 6.982245445251465,
+      "generated_tokens": 16,
+      "peak_memory_gb": 12.492765426635742,
+      "throughput_tok_per_sec": 2.291526433073388,
+      "prefill_sec": 0.4305136203765869,
+      "decode_sec": 6.982245445251465,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1363
+        ],
+        "attention_mask": [
+          1,
+          1363
+        ],
+        "mm_token_type_ids": [
+          1,
+          1363
+        ],
+        "pixel_values": [
+          5220,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5220,
+      "image_tokens_after": null
+    },
+    {
+      "index": 3,
+      "question": "What color is the traffic lights in this scene?\nPlease answer directly with a single word or number.",
+      "prediction_raw": "answer with only the final answer. No explanation.",
+      "prediction_final": "answer with only the final answer. No explanation.",
+      "gold": "Green",
+      "correct": false,
+      "latency_sec": 4.739840507507324,
+      "generated_tokens": 11,
+      "peak_memory_gb": 12.492763996124268,
+      "throughput_tok_per_sec": 2.320753194664958,
+      "prefill_sec": 0.4216785430908203,
+      "decode_sec": 4.739840507507324,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1347
+        ],
+        "attention_mask": [
+          1,
+          1347
+        ],
+        "mm_token_type_ids": [
+          1,
+          1347
+        ],
+        "pixel_values": [
+          5220,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5220,
+      "image_tokens_after": null
+    },
+    {
+      "index": 4,
+      "question": "Which direction are the knobs currently in?\nA. The knobs are currently in the downward facing position.\nB. The knobs are currently in the right facing position.\nC. The knobs are currently in the upward facing position.\nPlease answer directly with only the letter of the correct option and nothing else.",
+      "prediction_raw": "Answer with only the final\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "prediction_final": "Answer with only the final\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "gold": "C",
+      "correct": false,
+      "latency_sec": 9.400612592697144,
+      "generated_tokens": 16,
+      "peak_memory_gb": 15.599695682525635,
+      "throughput_tok_per_sec": 1.7020167401036805,
+      "prefill_sec": 0.5908889770507812,
+      "decode_sec": 9.400612592697144,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1809
+        ],
+        "attention_mask": [
+          1,
+          1809
+        ],
+        "mm_token_type_ids": [
+          1,
+          1809
+        ],
+        "pixel_values": [
+          6912,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 6912,
+      "image_tokens_after": null
+    },
+    {
+      "index": 5,
+      "question": "Which is closer to us, the bus or the sedan?\nPlease answer directly with a single word or number.",
+      "prediction_raw": "bus",
+      "prediction_final": "bus",
+      "gold": "Bus",
+      "correct": true,
+      "latency_sec": 0.8595695495605469,
+      "generated_tokens": 2,
+      "peak_memory_gb": 12.492763996124268,
+      "throughput_tok_per_sec": 2.3267459870146583,
+      "prefill_sec": 0.423206090927124,
+      "decode_sec": 0.8595695495605469,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1349
+        ],
+        "attention_mask": [
+          1,
+          1349
+        ],
+        "mm_token_type_ids": [
+          1,
+          1349
+        ],
+        "pixel_values": [
+          5220,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5220,
+      "image_tokens_after": null
+    },
+    {
+      "index": 6,
+      "question": "Based on the shadow, where is the sun relative to us?\n\nA. Behind\nB. On the right\nC. In front\nPlease answer directly with only the letter of the correct option and nothing else.",
+      "prediction_raw": "Answer with only the final answer. No explanation.\u0000\u0000\u0000\u0000\u0000\u0000",
+      "prediction_final": "Answer with only the final answer. No explanation.\u0000\u0000\u0000\u0000\u0000\u0000",
+      "gold": "A",
+      "correct": false,
+      "latency_sec": 6.989573001861572,
+      "generated_tokens": 16,
+      "peak_memory_gb": 12.492765426635742,
+      "throughput_tok_per_sec": 2.289124098959783,
+      "prefill_sec": 0.43833208084106445,
+      "decode_sec": 6.989573001861572,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1370
+        ],
+        "attention_mask": [
+          1,
+          1370
+        ],
+        "mm_token_type_ids": [
+          1,
+          1370
+        ],
+        "pixel_values": [
+          5220,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5220,
+      "image_tokens_after": null
+    },
+    {
+      "index": 7,
+      "question": "How many cyclists are visible?\nPlease answer directly with a single word or number.",
+      "prediction_raw": "1111111111111111",
+      "prediction_final": "1111111111111111",
+      "gold": "2",
+      "correct": false,
+      "latency_sec": 6.871374607086182,
+      "generated_tokens": 16,
+      "peak_memory_gb": 12.492762088775635,
+      "throughput_tok_per_sec": 2.3285006152189434,
+      "prefill_sec": 0.4205763339996338,
+      "decode_sec": 6.871374607086182,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1343
+        ],
+        "attention_mask": [
+          1,
+          1343
+        ],
+        "mm_token_type_ids": [
+          1,
+          1343
+        ],
+        "pixel_values": [
+          5220,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5220,
+      "image_tokens_after": null
+    },
+    {
+      "index": 8,
+      "question": "Is the road in front of us:\nA. Sloping down\nB. Flat\nC. Sloping up\nPlease answer directly with only the letter of the correct option and nothing else.",
+      "prediction_raw": "Answer with only the final\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "prediction_final": "Answer with only the final\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "gold": "A",
+      "correct": false,
+      "latency_sec": 6.976426124572754,
+      "generated_tokens": 16,
+      "peak_memory_gb": 12.492765426635742,
+      "throughput_tok_per_sec": 2.293437888440317,
+      "prefill_sec": 0.437716007232666,
+      "decode_sec": 6.976426124572754,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          1366
+        ],
+        "attention_mask": [
+          1,
+          1366
+        ],
+        "mm_token_type_ids": [
+          1,
+          1366
+        ],
+        "pixel_values": [
+          5220,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 5220,
+      "image_tokens_after": null
+    },
+    {
+      "index": 9,
+      "question": "Which direction is the dog facing?\nA. The dog is facing forwards.\nB. The dog is facing to the left.\nC. The dog is facing backwards.\nPlease answer directly with only the letter of the correct option and nothing else.",
+      "prediction_raw": "Answer with only the final\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "prediction_final": "Answer with only the final\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+      "gold": "B",
+      "correct": false,
+      "latency_sec": 2.1644701957702637,
+      "generated_tokens": 16,
+      "peak_memory_gb": 8.981613636016846,
+      "throughput_tok_per_sec": 7.392109178156702,
+      "prefill_sec": 0.13351011276245117,
+      "decode_sec": 2.1644701957702637,
+      "input_shapes": {
+        "input_ids": [
+          1,
+          590
+        ],
+        "attention_mask": [
+          1,
+          590
+        ],
+        "mm_token_type_ids": [
+          1,
+          590
+        ],
+        "pixel_values": [
+          2080,
+          1536
+        ],
+        "image_grid_thw": [
+          1,
+          3
+        ]
+      },
+      "image_tokens_before": 2080,
+      "image_tokens_after": null
+    }
+  ]
+}
